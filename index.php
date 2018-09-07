@@ -133,9 +133,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-        <div class = "navbar1">
-          <img src="logo.png" style="width: 4%">
-        </div>
 
       <script>
       function myFunction() {
@@ -147,5 +144,19 @@
           }
       }
       </script>
+      <div id="wrapper">
+        <div id="pic1">
+              <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="">
+        </div>
+        <div id="pic2">
+              <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+        </div>
+        <div id="pic3">
+            <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+        </div>
+        <div id="pic4">
+            <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+        </div>
+      </div>
   </body>
 </html>
