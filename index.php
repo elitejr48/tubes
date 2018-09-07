@@ -20,20 +20,19 @@
   <body>
 
       <!-- buat topnav -->
-      <div class="example3">
-  <nav class="navbar navbar-inverse navbar-static-top">
+      <nav class="navbar navbar-inverse navbar-static-top example6">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://disputebills.com"><img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills" style="width: 60%">
+        <a class="navbar-brand text-hide" href="http://disputebills.com">Brand Text
         </a>
       </div>
-      <div id="navbar3" class="navbar-collapse collapse">
+      <div id="navbar6" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -56,7 +55,6 @@
     </div>
     <!--/.container-fluid -->
   </nav>
-</div>
 
     <div>
 

@@ -3,17 +3,9 @@ body{
   background-color: lightgrey;
 }
 
-.example3 .navbar-brand {
-  height: auto;
-}
-
-.example3 .nav >li >a {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.example3 .navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
+.example6 .navbar-brand{
+  background: url(https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
+  width: 200px;
 }
 
 .active {
