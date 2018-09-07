@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="design.css">
     <script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+    });
     </script>
   </head>
 
@@ -45,6 +50,7 @@
               <li><a href="#">One more separated link</a></li>
             </ul>
           </li>
+          <li><button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -98,7 +104,7 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="slide1.jpg" alt="slide1" style="width:100%;">
+        <img src="slide1.jpg" alt="slide1" style="max-width:100%;">
         <div class="carousel-caption">
           <h3>Los Angeles</h3>
           <p>LA is always so much fun!</p>
@@ -106,7 +112,7 @@
       </div>
 
       <div class="item">
-        <img src="slide2.jpg" alt="slide2" style="width:100%;">
+        <img src="slide2.jpg" alt="slide2" style="max-width:100%;">
         <div class="carousel-caption">
           <h3>Chicago</h3>
           <p>Thank you, Chicago!</p>
@@ -133,9 +139,8 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-        <div class = "navbar1">
-          <img src="logo.png" style="width: 4%">
-        </div>
+
+
 
       <script>
       function myFunction() {
