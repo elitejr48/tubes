@@ -178,6 +178,7 @@ float:left;
 padding-right: 23%;
 }
 
+<<<<<<< HEAD
 .pic1{
   width: 100%;
   height:auto;
@@ -196,4 +197,9 @@ padding-right: 23%;
 .pic4{
   width: 100%;
   height:auto;
+=======
+.description_for_image{
+  font-family: Helvetica;
+  text-align: ;
+>>>>>>> 3baf107ade32297ff8de99b782ca3e4403232b30
 }
