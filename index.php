@@ -141,18 +141,36 @@
   </div>
 
   <div class="rowz">
-  <div class="column">
-    <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="Snow">
-    <p>asd</p>
+    <div class="column">
+      <div class="home-image">
+        <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="Snow">
+      </div>
+      <div class="home-introduction">
+    	   <h3>Various &amp; Secure Online Transaction</h3>
+    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
+    	</div>
+    </div>
+
+    <div class="column">
+      <div class="home-image">
+        <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="Forest">
+      </div>
+      <div class="home-introduction">
+    	   <h3>Various &amp; Secure Online Transaction</h3>
+    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
+    	</div>
+    </div>
+
+    <div class="column">
+      <div class="home-image">
+        <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200008/option-3-no-hidden-price.png" alt="Mountains">
+      </div>
+      <div class="home-introduction">
+    	   <h3>Various &amp; Secure Online Transaction</h3>
+    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
+    	</div>
+    </div>
   </div>
-  <div class="column">
-    <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="Forest">
-    <p>asd</p>
-  </div>
-  <div class="column">
-    <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200008/option-3-no-hidden-price.png" alt="Mountains">
-  </div>
-</div>
 
 
       <script>

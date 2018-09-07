@@ -166,6 +166,12 @@ body{
     margin: 0px auto 0 auto;
 }
 
+.home-introduction{
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    margin: 0px auto 0 auto;
+}
 /* Clearfix (clear floats) */
 .rowz::after {
     content: "";
