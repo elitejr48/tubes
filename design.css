@@ -152,54 +152,30 @@ body{
   font-size: 17px;
 }
 
-
-body.modal-open {
-  overflow: inherit;
-  padding-right: 0 !important;
+* {
+    box-sizing: border-box;
 }
 
-#wrapper
-{
-//background-color: red;
-width:100%;
-padding-top: 5%;
-padding-bottom: 10%;
-padding-left: 13%;
-margin:0 auto;
-overflow:hidden;
-display:inline-block;
+.column {
+    float: left;
+    width: 20%;
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-bottom: 10%;
 }
 
-#pic1,#pic2, #pic3, #pic4
-{
-width: 100%;
-//background-color: green;
-float:left;
-padding-right: 23%;
+/* Clearfix (clear floats) */
+.rowz::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-<<<<<<< HEAD
-.pic1{
-  width: 100%;
-  height:auto;
-}
-
-.pic2{
-  width: 100%;
-  height:auto;
-}
-
-.pic3{
-  width: 100%;
-  height:auto;
-}
-
-.pic4{
-  width: 100%;
-  height:auto;
-=======
-.description_for_image{
-  font-family: Helvetica;
-  text-align: ;
->>>>>>> 3baf107ade32297ff8de99b782ca3e4403232b30
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+        display:block;
+        padding-left: 30%;
+    }
 }
