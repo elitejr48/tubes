@@ -141,16 +141,16 @@
   </div>
   <div id="wrapper">
     <div id="pic1">
-          <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="">
+          <img class="picture1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="">
     </div>
     <div id="pic2">
-          <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+          <img class="picture2" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
     </div>
     <div id="pic3">
-        <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+        <img class="picture3" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
     </div>
     <div id="pic4">
-        <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+        <img class="picture4" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
     </div>
   </div>
       <script>

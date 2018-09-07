@@ -172,8 +172,28 @@ display:inline-block;
 
 #pic1,#pic2, #pic3, #pic4
 {
+width: 100%;
 //background-color: green;
 float:left;
-width:15%;
 padding-right: 23%;
+}
+
+.pic1{
+  width: 100%;
+  height:auto;
+}
+
+.pic2{
+  width: 100%;
+  height:auto;
+}
+
+.pic3{
+  width: 100%;
+  height:auto;
+}
+
+.pic4{
+  width: 100%;
+  height:auto;
 }
