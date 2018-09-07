@@ -158,15 +158,31 @@
       <div id="wrapper">
         <div id="pic1">
               <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="">
+              <div class="description_for_image">
+                <h4>Various Secure Online Transaction</h4>
+							<p>Ini deskripsi dari gambar yang ada di atas nya, iconnya menyusul tergantung ntar jadinya kapan</p>
+              </div>
         </div>
         <div id="pic2">
               <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+              <div class="description_for_image">
+                <h4>Various Secure Online Transaction</h4>
+							<p>Ini deskripsi dari gambar yang ada di atas nya, iconnya menyusul tergantung ntar jadinya kapan</p>
+              </div>
         </div>
         <div id="pic3">
             <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+            <div class="description_for_image">
+              <h4>Various Secure Online Transaction</h4>
+            <p>Ini deskripsi dari gambar yang ada di atas nya, iconnya menyusul tergantung ntar jadinya kapan</p>
+            </div>
         </div>
         <div id="pic4">
             <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="">
+            <div class="description_for_image">
+              <h4>Various Secure Online Transaction</h4>
+            <p>Ini deskripsi dari gambar yang ada di atas nya, iconnya menyusul tergantung ntar jadinya kapan</p>
+            </div>
         </div>
       </div>
   </body>
