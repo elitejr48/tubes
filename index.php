@@ -92,70 +92,68 @@
           </div>
           </div>
         </div>
-
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
 
-          <div class="item active">
-            <img src="slide1.jpg" alt="slide1" style="max-width:100%;">
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>LA is always so much fun!</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="slide2.jpg" alt="slide2" style="max-width:100%;">
-            <div class="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="slide3.jpg" alt="slide3" style="width:100%;">
-            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-
-      <div class="rowz">
-        <div class="column">
-          <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="Snow">
-        </div>
-        <div class="column">
-          <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="Forest">
-        </div>
-        <div class="column">
-          <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200008/option-3-no-hidden-price.png" alt="Mountains">
-        </div>
-        <div class="column">
-          <img src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200009/option-4-more-value.png" alt="Mountains">
+      <div class="item active">
+        <img src="slide1.jpg" alt="slide1" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
         </div>
       </div>
+
+      <div class="item">
+        <img src="slide2.jpg" alt="slide2" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="slide3.jpg" alt="slide3" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="rowz">
+  <div class="column">
+    <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="Snow">
+    <p>asd</p>
+  </div>
+  <div class="column">
+    <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="Forest">
+    <p>asd</p>
+  </div>
+  <div class="column">
+    <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200008/option-3-no-hidden-price.png" alt="Mountains">
+  </div>
+</div>
+
 
       <script>
       function myFunction() {
