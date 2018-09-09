@@ -44,6 +44,7 @@
               <li><a href="#">My Profile</a></li>
               <li><a href="#">Edit Profile</a></li>
               <li><a href="#">History</a></li>
+              <li><a id="myBt" href="#">Logout</a></li>
             </ul>
           </li>
           <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->
