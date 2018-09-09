@@ -1,0 +1,29 @@
+body{
+	margin:0;
+  background: url(about_bg.jpg) repeat;
+  font-family:Helvetica;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #000000;
+  color:white;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin= 10px;
+}
+
+p1{
+
+}
+
+h1,h2,h3,h4,h5,h6{
+
+}
+
+div.transbox p {
+  margin: 5%;
+  color: #FFFFFF;
+  text-align:center;
+}
