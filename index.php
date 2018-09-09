@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="design.css">
     <script>
     $(document).ready(function(){
-        $("#myBtn").click(function(){
+        $("#myBt").click(function(){
             $("#myModal").modal();
         });
     });
@@ -40,7 +40,7 @@
           <li><a href="#">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
+            <ul class="dropdown-menu" Rerole="menu">
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
@@ -48,9 +48,11 @@
               <li class="dropdown-header">Nav header</li>
               <li><a href="#">Separated link</a></li>
               <li><a href="#">One more separated link</a></li>
+
             </ul>
           </li>
-          <li><button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button></li>
+          <li><a id="myBt" href="#">Login</a></li>
+          <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->
         </ul>
       </div>
       <!--/.nav-collapse -->
