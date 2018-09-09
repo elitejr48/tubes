@@ -85,7 +85,15 @@ body{
 #alamat{
 	 margin-top:5px;
 }
-
+#username{
+	 margin-top:5px;
+}
+#no_identitas{
+	 margin-top:5px;
+}
+#no_telp{
+	 margin-top:5px;
+}
 
 /*---for heading-----*/
 .heading{
