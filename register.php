@@ -133,9 +133,10 @@
 
                 </div>
               </div>
-  		     <div class="col-sm-12">
-  		         <div class="btn btn-warning">Submit</div>
-  		   </div>
+  		     <div>
+                <div class="btn btn-warning">Back</div>
+                   <div class="btn btn-warning">Submit</div>
+         </div>
   		 </div>
   	 </div>
 
