@@ -27,7 +27,7 @@
   	<!---Form starting---->
 
     <form action="register-process.php" method="post">
-  	<div class="row ">
+  	<div class="row">
   	 <!--- For Name---->
            <div class="col-sm-12">
                <div class="row">
@@ -55,7 +55,7 @@
             <div class="col-xs-4">
                   <label class="username" >Username :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="username"  id="username"placeholder="Enter your username" class="form-control" >
+                 <input type="text" name="username"  id="username" placeholder="Enter your username" class="form-control" >
               </div>
           </div>
       </div>
@@ -65,7 +65,7 @@
             <div class="col-xs-4">
                   <label class="no_id" >Nomor Identitas :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="no_id"  id="no_identitas"placeholder="Enter your id number" class="form-control" >
+                 <input type="text" name="identitas"  id="identitas" placeholder="Enter your identity number" class="form-control" >
               </div>
           </div>
       </div>
@@ -126,18 +126,18 @@
                 </div>
 
                   <div class="col-xs-4 male">
-                    <input type="radio" name="gender"  id="gender" value="Male">Male</input>
+                    <input type="radio" name="gender"  id="gender" value="M">Male</input>
                 </div>
 
                 <div class="col-xs-4 female">
-                    <input type="radio"  name="gender" id="gender" value="Female" >Female</input>
+                    <input type="radio"  name="gender" id="gender" value="F" >Female</input>
                   </div>
 
                 </div>
               </div>
   		     <div>
                 <div class="btn btn-warning">Back</div>
-                   <div class="btn btn-warning">Submit</div>
+                   <input type="submit" name="tambah" value="Tambah">
          </div>
   		 </div>
      </form>
