@@ -25,6 +25,8 @@
    <!---heading---->
        <header class="heading"> Registration-Form</header><hr></hr>
   	<!---Form starting---->
+
+    <form action="register-process.php" method="post">
   	<div class="row ">
   	 <!--- For Name---->
            <div class="col-sm-12">
@@ -53,7 +55,7 @@
             <div class="col-xs-4">
                   <label class="username" >Username :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="username"  id="email"placeholder="Enter your username" class="form-control" >
+                 <input type="text" name="username"  id="username"placeholder="Enter your username" class="form-control" >
               </div>
           </div>
       </div>
@@ -63,7 +65,7 @@
             <div class="col-xs-4">
                   <label class="no_id" >Nomor Identitas :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="no_id"  id="email"placeholder="Enter your id number" class="form-control" >
+                 <input type="text" name="no_id"  id="no_identitas"placeholder="Enter your id number" class="form-control" >
               </div>
           </div>
       </div>
@@ -73,7 +75,7 @@
             <div class="col-xs-4">
                   <label class="no_telp" >Nomor Telepon :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="no_telp"  id="email"placeholder="Enter your Telephone Number" class="form-control" >
+                 <input type="text" name="no_telp"  id="no_telp"placeholder="Enter your Telephone Number" class="form-control" >
               </div>
           </div>
       </div>
@@ -124,11 +126,11 @@
                 </div>
 
                   <div class="col-xs-4 male">
-                    <input type="radio" name="gender"  id="gender" value="boy">Male</input>
+                    <input type="radio" name="gender"  id="gender" value="Male">Male</input>
                 </div>
 
                 <div class="col-xs-4 female">
-                    <input type="radio"  name="gender" id="gender" value="girl" >Female</input>
+                    <input type="radio"  name="gender" id="gender" value="Female" >Female</input>
                   </div>
 
                 </div>
@@ -138,6 +140,7 @@
                    <div class="btn btn-warning">Submit</div>
          </div>
   		 </div>
+     </form>
   	 </div>
 
 
