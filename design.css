@@ -22,6 +22,7 @@ body{
   display: none;
 }
 
+
 #myBtn{
   float: left;
 
@@ -91,9 +92,9 @@ body{
   */
 
   @media (min-width: 410px) and (max-width: 425px){
-  .home-image {
+  /* .home-image {
      padding-right: 50%;
-  }
+  } */
 }
 
 
@@ -149,11 +150,16 @@ body{
     margin: 0px auto 0 auto;
 }
 
-.home-image{
-  padding-left: 5%;
-  padding-right: 15%;
-  margin: 0px auto 0 auto;
+.col-md-4{
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+.home-image{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+
 .home-introduction{
     padding-left: 15%;
     padding-right: 15%;
@@ -173,10 +179,10 @@ body{
  left:50%;
  top:50%;
 }
-.image1{
+/* .image1{
   padding-left: 35%;
   padding-right: 20%;
-}
+} */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -188,11 +194,11 @@ body{
         position: relative;
         margin: 0px auto 0 auto;
     }
-    .image1{
+    /* .image1{
       padding-left: 40%;
       padding-right: 20%;
       margin: 0px auto 0 auto;
-    }
+    } */
 }
 
 .footer {

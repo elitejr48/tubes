@@ -8,14 +8,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="design.css">
-    <script>
-    $(document).ready(function(){
-        $("#myBt").click(function(){
-            $("#myModal").modal();
-        });
-    });
-    </script>
   </head>
+
+  <?php
+    session_start();
+    if (!isset($_SESSION['username']))
+    {
+      echo "<script type='text/javascript'>alert('Anda Belum Login');location='index.php';</script>";
+    }
+    ?>
 
   <body>
 
@@ -39,12 +40,12 @@
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Contact</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome,  <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
             <ul class="dropdown-menu" Rerole="menu">
               <li><a href="#">My Profile</a></li>
               <li><a href="#">Edit Profile</a></li>
               <li><a href="#">History</a></li>
-              <li><a id="myBt" href="#">Logout</a></li>
+              <li><a id="myBt" href="logout-process.php">Logout</a></li>
             </ul>
           </li>
           <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->

@@ -60,7 +60,7 @@
 
               </ul>
             </li>
-            <li><a id="myBt" href="#">Login</a></li>
+            <li><a id="myBt" href="#">Login / Register</a></li>
             <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->
           </ul>
         </div>
@@ -98,7 +98,7 @@
             </div>
             <div class="modal-footer">
               <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-              <p>Not a member? <a href="#">Sign Up</a></p>
+              <p>Not a member? <a href="register.php">Sign Up</a></p>
               <p>Forgot <a href="#">Password?</a></p>
             </div>
           </form>
@@ -153,8 +153,8 @@
     </a>
   </div>
 
-  <div class="rowz">
-    <div class="column">
+  <div class="row">
+    <div class="col-md-4">
       <div class="home-image">
         <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="Snow">
       </div>
@@ -164,7 +164,7 @@
     	</div>
     </div>
 
-    <div class="column">
+    <div class="col-md-4">
       <div class="home-image">
         <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="Forest">
       </div>
@@ -174,9 +174,9 @@
     	</div>
     </div>
 
-    <div class="column">
+    <div class="col-md-4">
       <div class="home-image">
-        <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200008/option-3-no-hidden-price.png" alt="Mountains">
+        <img class="mx-auto d-block" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200008/option-3-no-hidden-price.png" alt="Mountains">
       </div>
       <div class="home-introduction">
     	   <h3>Various &amp; Secure Online Transaction</h3>
