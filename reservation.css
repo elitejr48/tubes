@@ -1,7 +1,7 @@
 /*-----Background-----*/
 
 body{
-	 background-image:url(https://s3.envato.com/files/243754334/primag.jpg);
+	 background-image:url(reservation_bg.jpg);
 	 background-repeat:no-repeat;
 	 background-size:cover;
 	 width:100%;
@@ -28,7 +28,7 @@ body{
      margin-top: 166px;
 }
 /*--- for label of first and last name---*/
-.lastname{
+.check_out{
 	 margin-left: 1px;
      font-family: sans-serif;
      font-size: 14px;
@@ -36,15 +36,15 @@ body{
      margin-top: 10px;
 
 }
-.firstname{
+.check_in{
 	 margin-left: 1px;
      font-family: sans-serif;
      font-size: 14px;
      color: white;
      margin-top: 5px;
 }
-.username{
-	 margin-left: 1px;
+.j_kamar{
+	 	margin-left: 1px;
      font-family: sans-serif;
      font-size: 14px;
      color: white;
@@ -57,14 +57,14 @@ body{
      color: white;
      margin-top: 10px;
 }
-.no_telp{
+.dewasa{
 	 margin-left: 1px;
      font-family: sans-serif;
      font-size: 14px;
      color: white;
      margin-top: 10px;
 }
-.email{
+.anak{
 	 margin-left: 1px;
      font-family: sans-serif;
      font-size: 14px;
@@ -79,20 +79,20 @@ body{
      color: white;
      margin-top: 10px;
 }
-#lname{
+#check_out{
 	 margin-top:5px;
 }
 #alamat{
 	 margin-top:5px;
 }
-#username{
+#j_kamar{
 	 margin-top:5px;
 }
 
 #no_identitas{
 	 margin-top:5px;
 }
-#no_telp{
+#dewasa{
 	 margin-top:5px;
 }
 
@@ -104,12 +104,12 @@ body{
 	 color:#F96;
 	 padding-top:10px;
 }
-/*-------for email----------*/
+/*-------for anak----------*/
   /*------label----*/
-#email{
+#anak{
 	  margin-top: 5px;
 }
-/*-----------for Password--------*/
+/*-----------for kamar--------*/
      /*-------label-----*/
 .mail{
 	 margin-left: 44px;
@@ -118,7 +118,7 @@ body{
      font-size: 14px;
      margin-top: 13px;
 }
-.pass{
+.kamar{
 	 color: white;
      margin-top: 9px;
      font-size: 14px;
@@ -126,10 +126,10 @@ body{
      margin-left: 4px;
      margin-top: 9px;
 }
-#password{
+#kamar{
  margin-top: 6px;
 }
-#confirm_password{
+#confirm_kamar{
  margin-top: 6px;
 }
 /*------------for phone Number--------*/
@@ -169,15 +169,15 @@ body{
 }
 /*------------For submit button---------*/
 .sbutton{
-	 color: white;
-     font-size: 20px;
-     border: 1px solid white;
-     background-color: #080808;
-     width: 32%;
-     margin-left: 41%;
-     margin-top: 16px;
-	 box-shadow: 0px 2px 2px 0px white;
-
+	background-color:Green;
+	margin-left:4;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
    }
 .btn.btn-warning{
   margin-right: 15px;
