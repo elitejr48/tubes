@@ -169,36 +169,37 @@
     	</div>
     </div>
   </div>
+  
   <div class="footer">
       <div class="contain">
       <div class="col">
-        <h1>Home</h1>
         <ul>
-          <li>About</li>
+          <br>
+          <li><a href="about.php">About</a></li>
         </ul>
       </div>
       <div class="col">
-        <h1>Products</h1>
         <ul>
-          <li>About</li>
+          <br>
+          <li><a href="kebijakan.php">Kebijakan</a></li>
         </ul>
       </div>
       <div class="col">
-        <h1>Accounts</h1>
         <ul>
-          <li>About</li>
+          <br>
+          <li><a href="room.php">Room</a></li>
         </ul>
       </div>
       <div class="col">
-        <h1>Resources</h1>
         <ul>
-          <li>Webmail</li>
+          <br>
+          <li><a href="facilities.php">Facilities</a></li>
         </ul>
       </div>
       <div class="col">
-        <h1>Support</h1>
         <ul>
-          <li>Contact us</li>
+          <br>
+          <li><a href="contact_us.php">Contact us</a></li>
         </ul>
       </div>
       <div class="col social">
@@ -212,6 +213,7 @@
     <div class="clearfix"></div>
     </div>
   </div>
+
 
       <script>
       function myFunction() {

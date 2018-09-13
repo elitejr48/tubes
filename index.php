@@ -28,7 +28,7 @@
 
   <body>
 
-      <!-- buat topnav -->
+    <!-- buat topnav -->
     <div class="example3">
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
@@ -45,11 +45,9 @@
         <div id="navbar3" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="reservation.php">Reservation</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="facilities.php">Facilities</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            </li>
             <li><a id="myBt" href="#">Login / Register</a></li>
             <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->
           </ul>
@@ -95,7 +93,8 @@
           </div>
           </div>
         </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -109,24 +108,21 @@
       <div class="item active">
         <img src="slide1.jpg" alt="slide1" style="width:100%;">
         <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>LA is always so much fun!</p>
+          <h3>A Place of Worship</h3>
         </div>
       </div>
 
       <div class="item">
         <img src="slide2.jpg" alt="slide2" style="width:100%;">
         <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
+          <h3>Your Palace Awaits!</h3>
         </div>
       </div>
 
       <div class="item">
         <img src="slide3.jpg" alt="slide3" style="width:100%;">
         <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
+          <h3>Luxury and Pride</h3>
         </div>
       </div>
 
@@ -174,31 +170,37 @@
     	</div>
     </div>
   </div>
+
   <div class="footer">
       <div class="contain">
       <div class="col">
         <ul>
-          <li><>About</li>
+          <br>
+          <li><a href="about.php">About</a></li>
         </ul>
       </div>
       <div class="col">
         <ul>
-          <li>Kebijakan </li>
+          <br>
+          <li><a href="kebijakan.php">Kebijakan</a></li>
         </ul>
       </div>
       <div class="col">
         <ul>
-          <li>Room</li>
+          <br>
+          <li><a href="room.php">Room</a></li>
         </ul>
       </div>
       <div class="col">
         <ul>
-          <li>Facilities</li>
+          <br>
+          <li><a href="facilities.php">Facilities</a></li>
         </ul>
       </div>
       <div class="col">
         <ul>
-          <li>Contact us</li>
+          <br>
+          <li><a href="contact_us.php">Contact us</a></li>
         </ul>
       </div>
       <div class="col social">
