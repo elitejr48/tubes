@@ -44,21 +44,11 @@
         </div>
         <div id="navbar3" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="facilities.php">Facilities</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" Rerole="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-
-              </ul>
             </li>
             <li><a id="myBt" href="#">Login / Register</a></li>
             <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->
@@ -187,31 +177,26 @@
   <div class="footer">
       <div class="contain">
       <div class="col">
-        <h1>Home</h1>
         <ul>
-          <li>About</li>
+          <li><>About</li>
         </ul>
       </div>
       <div class="col">
-        <h1>Products</h1>
         <ul>
-          <li>About</li>
+          <li>Kebijakan </li>
         </ul>
       </div>
       <div class="col">
-        <h1>Accounts</h1>
         <ul>
-          <li>About</li>
+          <li>Room</li>
         </ul>
       </div>
       <div class="col">
-        <h1>Resources</h1>
         <ul>
-          <li>Webmail</li>
+          <li>Facilities</li>
         </ul>
       </div>
       <div class="col">
-        <h1>Support</h1>
         <ul>
           <li>Contact us</li>
         </ul>
