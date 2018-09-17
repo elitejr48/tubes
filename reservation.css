@@ -195,8 +195,9 @@ div.transbox {
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin= 10px;
 	padding-left: 30px;
-	padding-bottom: 100px;
+	padding-bottom: 90px;
 	padding-right: 30px;
+	padding-top: 40px;
 }
 
 p{
