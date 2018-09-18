@@ -1,37 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Reservation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="design.css">
+    <link rel="stylesheet" type="text/css" href="reservation.css">
     <script>
     $(document).ready(function(){
-        $("#myBt").click(function(){
+        $("#myBtn").click(function(){
             $("#myModal").modal();
         });
     });
     </script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-
-  <!-- alert Login -->
-  <?php
-    session_start();
-    if (isset($_SESSION['user']))
-    {
-      echo "<script type='text/javascript'>alert('Anda Sudah Login');location='user/home.php';</script>";
-    }
-    else if (isset($_SESSION['admin']))
-    {
-      echo "<script type='text/javascript'>alert('Anda Sudah Login');location='admin/admin-tool/index.php';</script>";
-    }
-    ?>
-
   <body>
-
     <!-- buat topnav -->
     <div class="example3">
     <nav class="navbar navbar-inverse navbar-static-top">
@@ -48,8 +37,8 @@
         </div>
         <div id="navbar3" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="reservation.php">Reservation</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li class="active"><a href="reservation.php">Reservation</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="facilities.php">Facilities</a></li>
             <li><a id="myBt" href="#">Login / Register</a></li>
@@ -80,7 +69,7 @@
                 </div>
                 <div class="form-group">
                   <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                  <input type="password" class="form-control" name="password" id="psw" placeholder="Enter password">
+                  <input type="text" class="form-control" name="password" id="psw" placeholder="Enter password">
                 </div>
                 <div class="checkbox">
                   <label><input type="checkbox" value="" checked>Remember me</label>
@@ -97,93 +86,101 @@
           </div>
           </div>
         </div>
-<<<<<<< HEAD
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-=======
+<div class="background">
+  <div class="transbox">
+    <div class="container">
+   <!---heading---->
+       <header class="heading"> RESERVATION</header><hr></hr>
+  	<!---Form starting---->
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
->>>>>>> 369bf250110120e56a10db31963ed0e5aa23a14b
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    <form action="register-process.php" method="post">
+  	<div class="row">
+  	 <!--- For Name---->
+           <div class="col-sm-12">
+               <div class="row">
+  			     <div class="col-xs-4">
+            	         <label class="check_in">Check in:</label> </div>
+  		         <div class="col-xs-8">
+  		             <input type="date" name="check_in" id="check_in" placeholder="Enter your Check-in Date" class="form-control ">
+               </div>
+  		      </div>
+  		 </div>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
 
-      <div class="item active">
-        <img src="slide1.jpg" alt="slide1" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>A Place of Worship</h3>
-        </div>
+           <div class="col-sm-12">
+  		     <div class="row">
+  			     <div class="col-xs-4">
+                       <label class="check_out">Check out :</label></div>
+  				<div class ="col-xs-8">
+  		             <input type="date" name="check_out" id="check_out" placeholder="Enter your Check-out Date" class="form-control last">
+                  </div>
+  		     </div>
+  		 </div>
+      <!-----For Username---->
+      <div class="col-sm-12">
+          <div class="row">
+            <div class="col-xs-4">
+                  <label class="j_kamar" >Jumlah kamar :</label></div>
+            <div class="col-xs-8"	>
+                 <input type="number" name="j_kamar"  id="j_kamar" placeholder="Enter your room quantity" class="form-control" >
+              </div>
+          </div>
       </div>
-
-      <div class="item">
-        <img src="slide2.jpg" alt="slide2" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Your Palace Awaits!</h3>
-        </div>
+      <!-----For nomor Telepon---->
+      <div class="col-sm-12">
+          <div class="row">
+            <div class="col-xs-4">
+                  <label class="dewasa" >Dewasa :</label></div>
+            <div class="col-xs-8"	>
+                 <input type="number" name="dewasa"  id="dewasa" placeholder="Enter your number"  class="form-control" >
+              </div>
+          </div>
       </div>
-
-      <div class="item">
-        <img src="slide3.jpg" alt="slide3" style="width:100%;">
-        <div class="carousel-caption">
-<<<<<<< HEAD
-          <h3>New
-          </h3>
-          <p></p>
-=======
-          <h3>Luxury and Pride</h3>
->>>>>>> 369bf250110120e56a10db31963ed0e5aa23a14b
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+       <!-----For email---->
+  		 <div class="col-sm-12">
+  		     <div class="row">
+  			     <div class="col-xs-4">
+  		             <label class="anak" >Anak-anak :</label></div>
+  			     <div class="col-xs-8"	>
+  			          <input type="number" name="anak"  id="anak" placeholder="Enter your number" class="form-control" >
+  		         </div>
+  		     </div>
+  		 </div>
+       <!-----For Password and confirm password---->
+              <div class="col-sm-12">
+                <div class="row">
+                <div class="col-xs-4">
+                       <label class="kamar">Pilih jenis kamar :</label></div>
+             <div class="col-xs-8">
+                <select name= "alamat" id="kamar"  class="form-control">
+                  <option value="Superior">Superior</option>
+                  <option value="Double_Deluxe">Double Deluxe</option>
+                  <option value="Executive">Executive</option>
+                  <option value="Junior_suite">Junior suite</option>
+                </select>
+            </div>
+              </div>
+             </div>
+       <!-----For Alamat---->
+  		 <div class="col-sm-12">
+  		     <div class="row">
+  			     <div class="col-xs-4">
+  		             <label class="alamat" >Harga :</label></div>
+  			     <div class="col-xs-8"	>
+  			          <input type="text" name="alamat"  id="alamat"placeholder="" class="form-control" >
+  		         </div>
+  		     </div>
+  		 </div>
+            <!-----------For button-------->
+  		     <div stylr="text-align:right">
+                <div class="btn btn-warning">Back</div>
+                   <input class:"sbutton" type="submit" name="tambah" value="Tambah">
+          </div>
+  		 </div>
+     </form>
+  	 </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="home-image">
-        <img class="image1" src="icon1.png" alt="Snow">
-      </div>
-      <div class="home-introduction">
-    	   <h3>Various &amp; Secure Online Transaction</h3>
-    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
-    	</div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="home-image">
-        <img class="image1" src="icon2.png" alt="Forest">
-      </div>
-      <div class="home-introduction">
-    	   <h3>Various &amp; Secure Online Transaction</h3>
-    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
-    	</div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="home-image">
-        <img class="mx-auto d-block" src="icon3.png" alt="Mountains">
-      </div>
-      <div class="home-introduction">
-    	   <h3>Various &amp; Secure Online Transaction</h3>
-    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
-    	</div>
-    </div>
-  </div>
+</div>
 
   <div class="footer">
       <div class="contain">
@@ -229,16 +226,6 @@
     </div>
   </div>
 
-      <script>
-      function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-              x.className += " responsive";
-          } else {
-              x.className = "topnav";
-          }
-      }
-      </script>
 
   </body>
 </html>
