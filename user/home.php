@@ -139,7 +139,7 @@
     </a>
   </div>
 
-  <div class="rowz">
+  <div class="row">
     <div class="column">
       <div class="home-image">
         <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="Snow">
