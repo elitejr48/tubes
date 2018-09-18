@@ -28,7 +28,7 @@
       echo "<script type='text/javascript'>alert('Anda Belum Login');location='index.php';</script>";
     }
     ?>
-  <body style="background:url(histori_bg.jpg)">
+  <body>
 
   <div class="example3">
       <nav class="navbar navbar-inverse navbar-static-top">
