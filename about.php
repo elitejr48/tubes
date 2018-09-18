@@ -37,7 +37,6 @@
       <div id="navbar3" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.php">Home</a></li>
-          <li><a href="reservation.php">Reservation</a></li>
           <li class="active"><a href="about.php">About</a></li>
           <li><a href="facilities.php">Facilities</a></li>
           <li><a id="myBt" href="#">Login / Register</a></li>
@@ -68,7 +67,7 @@
               </div>
               <div class="form-group">
                 <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                <input type="text" class="form-control" name="password" id="psw" placeholder="Enter password">
+                <input type="password" class="form-control" name="password" id="psw" placeholder="Enter password">
               </div>
               <div class="checkbox">
                 <label><input type="checkbox" value="" checked>Remember me</label>

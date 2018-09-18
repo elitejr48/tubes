@@ -49,7 +49,6 @@
         <div id="navbar3" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="reservation.php">Reservation</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="facilities.php">Facilities</a></li>
             <li><a id="myBt" href="#">Login / Register</a></li>
@@ -97,12 +96,8 @@
           </div>
           </div>
         </div>
-<<<<<<< HEAD
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-=======
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
->>>>>>> 369bf250110120e56a10db31963ed0e5aa23a14b
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -130,13 +125,10 @@
       <div class="item">
         <img src="slide3.jpg" alt="slide3" style="width:100%;">
         <div class="carousel-caption">
-<<<<<<< HEAD
           <h3>New
           </h3>
           <p></p>
-=======
           <h3>Luxury and Pride</h3>
->>>>>>> 369bf250110120e56a10db31963ed0e5aa23a14b
         </div>
       </div>
 

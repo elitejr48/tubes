@@ -165,23 +165,6 @@ body{
     text-align: center;
     margin: 0px auto 0 auto;
 }
-/* Clearfix (clear floats) */
-.rowz::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.rowz
-{
- margin:0 auto;
- background:#f7f7f7;
- left:50%;
- top:50%;
-}
-/* .image1{
-  padding-left: 35%;
-  padding-right: 20%;
-} */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {

@@ -16,6 +16,13 @@
     });
     </script>
   </head>
+  <?php
+    session_start();
+    if (!isset($_SESSION['username']))
+    {
+      echo "<script type='text/javascript'>alert('Anda Belum Login');location='../index.php';</script>";
+    }
+    ?>
 
 <body>
 
@@ -35,11 +42,19 @@
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.php">Home</a></li>
+              <li><a href="home.php">Home</a></li>
               <li><a href="reservation.php">Reservation</a></li>
               <li><a href="about.php">About</a></li>
               <li><a href="facilities.php">Facilities</a></li>
-              <li><a id="myBt" href="#">Login / Register</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
+                <ul class="dropdown-menu" Rerole="menu">
+                  <li><a href="#">My Profile</a></li>
+                  <li><a href="edit_profile.php">Edit Profile</a></li>
+                  <li><a href="historypemesanan.php">History</a></li>
+                  <li><a id="myBt" href="logout-process.php">Logout</a></li>
+                </ul>
+              </li>
               <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->
             </ul>
           </div>
