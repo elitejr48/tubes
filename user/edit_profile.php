@@ -111,6 +111,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['nama_lengkap']; ?>">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -119,6 +120,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="nomor_identitas" size="50" value="<?php echo $data['nomor_identitas']; ?>">
+                    <br>
 									</td>
 								</tr>
 									<tr>
@@ -127,6 +129,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="nomor_telepon" size="50" value="<?php echo $data['nomor_telepon']; ?>">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -135,6 +138,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="email" name="email" size="50" value="<?php echo $data['email']; ?>">
+                    <br>
 									</td>
 								</tr>
 									<tr>
@@ -143,6 +147,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="alamat" size="50" value="<?php echo $data['alamat']; ?>">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -151,6 +156,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="username" size="50" value="<?php echo $data['username']; ?>">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -159,6 +165,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="old_password" name="old_password" size="50">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -167,10 +174,12 @@
 								<tr>
 									<td>
 										<input class="form-control" type="new_password" name="new_password" size="50">
+                    <br>
 									</td>
 								</tr>
 								<tr>
 									<td colspan="2" align="center"><button type="submit" name="simpan" class="btn btn-primary">SIMPAN</button></td>
+                  <br>   
 								</tr>
 							</table>
 	</form>

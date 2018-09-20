@@ -10,6 +10,11 @@ body{
 
 }
 
+
+input[type=text]{
+  padding-bottom: 10px;
+}
+
 /*-----for border----*/
 /*.container{
 	font-family:Roboto,sans-serif;
