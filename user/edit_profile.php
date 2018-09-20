@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../design.css">
+    <link rel="stylesheet" type="text/css" href="../reservation.css">
     <script>
     $(document).ready(function(){
         $("#myBt").click(function(){
@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://disputebills.com"><img src="logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
+            <a class="navbar-brand" href="http://disputebills.com"><img src="../logo 1 edit.png" alt="sun Hotel" style="max-height: 155%" >
             </a>
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
@@ -179,7 +179,7 @@
 								</tr>
 								<tr>
 									<td colspan="2" align="center"><button type="submit" name="simpan" class="btn btn-primary">SIMPAN</button></td>
-                  <br>   
+                  <br>
 								</tr>
 							</table>
 	</form>
