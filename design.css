@@ -8,8 +8,7 @@ body{
   padding-bottom: 20px;
 }
 .example3 .navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
+  padding: 18px;
 }
 
 .active {
@@ -121,9 +120,6 @@ body{
   }
 }
 
-.myCarousel{
-  margin-top: 100px;
-}
 #login1
 {
   float: right;
@@ -150,8 +146,7 @@ body{
 }
 
 .col-md-4{
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 .home-image{
   display: flex;

@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://disputebills.com"><img src="logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
+          <a class="navbar-brand" href="index.php"><img src="logo 1 edit.png" alt="Sun Hotel" style="max-height: 155%" >
           </a>
         </div>
         <div id="navbar3" class="navbar-collapse collapse">
@@ -109,21 +109,21 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="slide1.jpg" alt="slide1" style="width:100%;">
+        <img src="slide1.jpg" alt="slide1" class="d-block w-100">
         <div class="carousel-caption">
           <h3>A Place of Worship</h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="slide2.jpg" alt="slide2" style="width:100%;">
+        <img src="slide2.jpg" class="d-block w-100" alt="slide2">
         <div class="carousel-caption">
           <h3>Your Palace Awaits!</h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="slide3.jpg" alt="slide3" style="width:100%;">
+        <img src="slide3.jpg" alt="slide3" class="d-block w-100">
         <div class="carousel-caption">
           <h3>New
           </h3>
@@ -156,7 +156,7 @@
     	</div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 py-1">
       <div class="home-image">
         <img class="image1" src="icon2.png" alt="Forest">
       </div>
@@ -166,7 +166,7 @@
     	</div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 py-1">
       <div class="home-image">
         <img class="mx-auto d-block" src="icon3.png" alt="Mountains">
       </div>
@@ -221,16 +221,7 @@
     </div>
   </div>
 
-      <script>
-      function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-              x.className += " responsive";
-          } else {
-              x.className = "topnav";
-          }
-      }
-      </script>
+
 
   </body>
 </html>

@@ -72,7 +72,7 @@
        <header class="heading"> HISTORY</header><hr></hr>
   	<!---Form starting---->
 
-    <table style="color: white;" class="table table-bordered">
+    <table style="color: black;" class="table table-bordered">
        <tr>
          <th class="info">No</th>
           <th class="info">Tanggal Pemesanan</th>
@@ -83,7 +83,7 @@
        </tr>
 
        <?php
-        include('D:\xampp\htdocs\tubes\koneksi.php');
+        include('../koneksi.php');
 
         $sql = "SELECT * FROM pemesanan inner join kamar on pemesanan.id_kamar = kamar.id_kamar  where pemesanan.id_pemesan = '$_SESSION[id]' order by tgl_transaksi ASC";
 
