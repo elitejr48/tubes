@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +25,32 @@
     echo "<script type='text/javascript'>alert('Anda Belum Login');location='../index.php';</script>";
   }
   ?>
+=======
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="reservation.css">
+    <script>
+    $(document).ready(function(){
+        $("#myBt").click(function(){
+            $("#myModal").modal();
+        });
+    });
+    </script>
+  </head>
+  <?php
+    session_start();
+    if (!isset($_SESSION['username']))
+    {
+      echo "<script type='text/javascript'>alert('Anda Belum Login');location='../index.php';</script>";
+    }
+    ?>
+>>>>>>> ec7c1243d5f04e97d120ac595333530a4219f360
 
 <body>
 
@@ -38,7 +65,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+<<<<<<< HEAD
             <a class="navbar-brand" href="http://disputebills.com"><img src="../logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
+=======
+            <a class="navbar-brand" href="http://disputebills.com"><img src="../logo 1 edit.png" alt="sun Hotel" style="max-height: 155%" >
+>>>>>>> ec7c1243d5f04e97d120ac595333530a4219f360
             </a>
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
@@ -123,7 +154,12 @@
 								</tr>
 								<tr>
 									<td>
+<<<<<<< HEAD
 										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['first_name']; echo $data['last_name']; ?>">
+=======
+										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['nama_lengkap']; ?>">
+                    <br>
+>>>>>>> ec7c1243d5f04e97d120ac595333530a4219f360
 									</td>
 								</tr>
 								<tr>
@@ -131,7 +167,12 @@
 								</tr>
 								<tr>
 									<td>
+<<<<<<< HEAD
 										<input class="form-control" type="text" name="nomor_identitas" size="50" value="<?php echo $data['no_identitas']; ?>">
+=======
+										<input class="form-control" type="text" name="nomor_identitas" size="50" value="<?php echo $data['nomor_identitas']; ?>">
+                    <br>
+>>>>>>> ec7c1243d5f04e97d120ac595333530a4219f360
 									</td>
 								</tr>
 									<tr>
@@ -139,7 +180,12 @@
 								</tr>
 								<tr>
 									<td>
+<<<<<<< HEAD
 										<input class="form-control" type="text" name="nomor_telepon" size="50" value="<?php echo $data['no_telp']; ?>">
+=======
+										<input class="form-control" type="text" name="nomor_telepon" size="50" value="<?php echo $data['nomor_telepon']; ?>">
+                    <br>
+>>>>>>> ec7c1243d5f04e97d120ac595333530a4219f360
 									</td>
 								</tr>
 								<tr>
@@ -148,6 +194,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="email" name="email" size="50" value="<?php echo $data['email']; ?>">
+                    <br>
 									</td>
 								</tr>
 									<tr>
@@ -156,6 +203,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="alamat" size="50" value="<?php echo $data['alamat']; ?>">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -164,6 +212,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="username" size="50" value="<?php echo $data['username']; ?>">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -172,6 +221,7 @@
 								<tr>
 									<td>
 										<input class="form-control" type="old_password" name="old_password" size="50">
+                    <br>
 									</td>
 								</tr>
 								<tr>
@@ -180,10 +230,12 @@
 								<tr>
 									<td>
 										<input class="form-control" type="new_password" name="new_password" size="50">
+                    <br>
 									</td>
 								</tr>
 								<tr>
 									<td colspan="2" align="center"><button type="submit" name="simpan" class="btn btn-primary">SIMPAN</button></td>
+                  <br>
 								</tr>
 							</table>
 	</form>

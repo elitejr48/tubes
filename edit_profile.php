@@ -61,8 +61,8 @@
               </div>
               <div class="modal-body" style="padding:40px 50px;">
                 <form role="form">
-                  <div class="form-group">
-                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                  <div class="form-group" >
+                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username </label>
                     <input type="text" name="username" class="form-control" id="usrname" placeholder="Enter email">
                   </div>
                   <div class="form-group">
@@ -98,7 +98,8 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['nama_lengkap']; ?>">
-									</td>
+                     <br>
+                  </td>
 								</tr>
 								<tr>
 									<td>Nomor identitas</td>
@@ -106,7 +107,8 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="nomor_identitas" size="50" value="<?php echo $data['nomor_identitas']; ?>">
-									</td>
+                    <br>
+                  </td>
 								</tr>
 									<tr>
 									<td>Nomor telepon</td>
@@ -114,7 +116,8 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="nomor_telepon" size="50" value="<?php echo $data['nomor_telepon']; ?>">
-									</td>
+                    <br>
+                  </td>
 								</tr>
 								<tr>
 									<td>Email</td>
@@ -122,7 +125,8 @@
 								<tr>
 									<td>
 										<input class="form-control" type="email" name="email" size="50" value="<?php echo $data['email']; ?>">
-									</td>
+                    <br>
+                  </td>
 								</tr>
 									<tr>
 									<td>Alamat</td>
@@ -130,7 +134,8 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="alamat" size="50" value="<?php echo $data['alamat']; ?>">
-									</td>
+                    <br>
+                  </td>
 								</tr>
 								<tr>
 									<td>Username</td>
@@ -138,7 +143,8 @@
 								<tr>
 									<td>
 										<input class="form-control" type="text" name="username" size="50" value="<?php echo $data['username']; ?>">
-									</td>
+                    <br>
+                  </td>
 								</tr>
 								<tr>
 									<td>old password</td>
@@ -146,7 +152,8 @@
 								<tr>
 									<td>
 										<input class="form-control" type="old_password" name="old_password" size="50">
-									</td>
+                    <br>
+                  </td>
 								</tr>
 								<tr>
 									<td>new Password</td>
@@ -154,11 +161,13 @@
 								<tr>
 									<td>
 										<input class="form-control" type="new_password" name="new_password" size="50">
-									</td>
+                    <br>
+                  </td>
 								</tr>
 								<tr>
 									<td colspan="2" align="center"><button type="submit" name="simpan" class="btn btn-primary">SIMPAN</button></td>
-								</tr>
+                  <br>   
+              	</tr>
 							</table>
 	</form>
   </div>
