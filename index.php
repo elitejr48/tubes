@@ -22,7 +22,7 @@
     session_start();
     if (isset($_SESSION['user']))
     {
-      echo "<script type='text/javascript'>alert('Anda Sudah Login');location='user/home.php';</script>";
+      echo "<script type='text/javascript'>location='user/home.php';</script>";
     }
     else if (isset($_SESSION['admin']))
     {
@@ -96,7 +96,7 @@
           </div>
           </div>
         </div>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">

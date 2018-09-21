@@ -137,7 +137,7 @@
 
 
 <script>
-$("#hargaperhari,#haringinap").keyup(function () {
+$("#haringinap").keyup(function () {
 
   $('#totalharga').val($('#haringinap').val() * $('#hargaperhari').val());
 });

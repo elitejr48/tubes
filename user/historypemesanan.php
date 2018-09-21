@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../reservation.css">
+    <link rel="stylesheet" type="text/css" href="../design.css">
     <script>
 
     $(document).ready(function(){
@@ -41,15 +41,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://disputebills.com"><img src="logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
+            <a class="navbar-brand" href="home.php"><img src="../logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
             </a>
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home</a></li>
-              <li class="active"><a href="reservation.php">Reservation</a></li>
+              <li><a href="home.php">Home</a></li>
+              <li><a href="reservation.php">Reservation</a></li>
               <li><a href="#">Contact</a></li>
-              <li class="dropdown">
+              <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
                 <ul class="dropdown-menu" Rerole="menu">
                   <li><a href="#">My Profile</a></li>
@@ -80,11 +80,16 @@
           <th class="info">Tanggal Menginap</th>
           <th class="info">Hari Menginap</th>
           <th class="info">Total Harga</th>
+          <th class="info">Status</th>
        </tr>
 
        <?php
         include('../koneksi.php');
-
+        function buatrp($angka)
+        {
+          $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
+	        return $hasil_rupiah;
+        }
         $sql = "SELECT * FROM pemesanan inner join kamar on pemesanan.id_kamar = kamar.id_kamar  where pemesanan.id_pemesan = '$_SESSION[id]' order by tgl_transaksi ASC";
 
         if($result=mysqli_query($conn,$sql))
@@ -99,7 +104,13 @@
                     echo '<td width="15%">'.$data['nama_kamar'].'</td>';
                     echo '<td>'.$data['tgl_menginap'].'</td>';
                     echo '<td>'.$data['hari_menginap'].' hari</td>';
-                    echo '<td>'.$data['total_harga'].'</td>';
+                    echo '<td>'.buatrp($data['total_harga']).'</td>';
+                    if($data['status'] == 0){
+                      echo '<td>On Process</td>';
+                    }
+                    else if($data['status'] == 1) {
+                      echo '<td>Accepted</td>';
+                    }
                 $no++;
             }
           }

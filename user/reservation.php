@@ -16,9 +16,6 @@
         });
     });
     </script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <?php
@@ -28,7 +25,7 @@
       echo "<script type='text/javascript'>alert('Anda Belum Login');location='index.php';</script>";
     }
     ?>
-  <body style="background:url(background_user.jpg)">
+  <body>
 
   <div class="example3">
       <nav class="navbar navbar-inverse navbar-static-top">
@@ -69,9 +66,10 @@
     <div class="container">
    <!---heading---->
        <header class="heading"> RESERVATION</header><hr></hr>
+
   	<!---Form starting---->
 
-    <table style="color: black;" class="table table-bordered">
+    <!-- <table style="color: black;" class="table table-bordered">
        <tr>
          <th class="info">No</th>
           <th class="info">Nama Kamar</th>
@@ -80,10 +78,16 @@
           <th class="info">Deskripsi</th>
           <th class="info">Harga</th>
           <th class="info" colspan="2">Action</th>
-       </tr>
+       </tr> -->
       <form method="get">
        <?php
         include('../koneksi.php');
+
+        function buatrp($angka)
+        {
+          $hasil_rupiah = "Rp  " . number_format($angka,0,',','.');
+	        return $hasil_rupiah;
+        }
 
         $sql = "SELECT * FROM kamar";
 
@@ -93,30 +97,54 @@
           {
           $no = 1;
             while($data = mysqli_fetch_assoc($result)){
-                echo '<tr>';
-                    echo '<td>'.$no.'</td>';
-                    echo '<td width="15%">'.$data['nama_kamar'].'</td>';
-                    echo '<td width="15%">'.$data['tipe_kamar'].'</td>';
-                    echo '<td width="15%"><center><img src="../admin/admin-tool/image/'.$data['gambar_kamar'].'" width="100%"></center></td>';
-                    echo '<td >'.$data['deskripsi'].'</td>';
-                    echo '<td width="15%">Rp. '.$data['harga_kamar'].'</td>';
-                    echo '<td width="5%"><a href="pesankamar.php?id_kamar='.$data['id_kamar'].'&id_pemesan='.$_SESSION['id'].'">Pesan</a></td>';
-                $no++;
+                echo '
+                <div class="box">
+                <div class="border-top"></div>
+                <div class="border-right"></div>
+                <div class="border-bottom"></div>
+                <div class="border-left"></div>
+
+                <div class="row draw">
+                <div class="row draw" height="176px">';
+                    //echo '<td>'.$no.'</td>';
+                    echo
+                    '
+                      <div class="col-sm-3">
+                      <br>
+                        <img src="../admin/admin-tool/image/'.$data['gambar_kamar'].'" width="180px" height="176px">
+                      </div>
+                      <div class="col-sm-5 colmargin">
+                        <p>'.$data['nama_kamar'].'</p><br>
+                        <p>'.$data['deskripsi'].'</p>
+                      </div>
+                      <div class="col-sm-4 colmargin text-center">
+                        <p class="harga">'.buatrp($data['harga_kamar']).'</p><br>
+                        <div class="button-effect">
+                          <a href="pesankamar.php?id_kamar='.$data['id_kamar'].'&id_pemesan='.$_SESSION['id'].'" style="text-decoration:none" class="effect effect-2" href="#" title="Learn More">Pesan</a>
+                        </div>
+                      </div>
+                    </div>';
+                    //echo '<td width="15%">'.$data['tipe_kamar'].'</td>';
+                    //echo '<td width="15%"><center><img src="../admin/admin-tool/image/'.$data['gambar_kamar'].'" width="100%"></center></td>';
+                    //echo '<td >'.$data['deskripsi'].'</td>';
+                    //echo '<td width="15%">Rp. '.$data['harga_kamar'].'</td>';
+                    //echo '<td width="5%"></td>';
+                echo '</div></div>';
             }
           }
           else
           {
-            echo '<tr><td colspan="6">Tidak ada data!</td><tr>';
+
           }
         }
       ?>
 
 
-    </table>
+    <!-- </table> -->
   	 </div>
 
 
-  </div>
-
+  </div
+</div><!-- box -->
   </body>
 </html>

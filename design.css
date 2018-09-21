@@ -20,9 +20,6 @@ body{
   display: none;
 }
 
-input[type=text]{
-  padding-bottom: 10px;
-}
 
 #myBtn{
   float: left;
