@@ -13,12 +13,20 @@
    <script src="../assets/js/script.js"></script>
    <title>Administrator</title>
 </head>
+<?php
+  session_start();
+  if (!isset($_SESSION['admin']))
+  {
+    echo "<script type='text/javascript'>location='../../index.php';</script>";
+  }
+  ?>
 <body>
    <div class="col-md-2 colmenu" style="padding:0;">
       <div class="col-md-12" style="padding:10px;"><center><img src="../assets/images/profil.jpg" alt="" height="100px" width="100px"></center></div>
       <div class="col-md-12" style="padding:5px;padding-bottom:10px;color:#fff;"><center>Administrator</center></div>
          <?php include "menu.php"; ?>
    </div>
+
    <?php
          if (isset($_GET['user']))
          {

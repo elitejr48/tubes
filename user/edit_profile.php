@@ -1,28 +1,29 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../design.css">
-    <script>
-    $(document).ready(function(){
-        $("#myBt").click(function(){
-            $("#myModal").modal();
-        });
-    });
-    </script>
-  </head>
-  <?php
-    session_start();
-    if (!isset($_SESSION['username']))
-    {
-      echo "<script type='text/javascript'>alert('Anda Belum Login');location='../index.php';</script>";
-    }
-    ?>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../edit_profile.css">
+  <script>
+  $(document).ready(function(){
+      $("#myBt").click(function(){
+          $("#myModal").modal();
+      });
+  });
+  </script>
+</head>
+
+<?php
+  session_start();
+  if (!isset($_SESSION['username']))
+  {
+    echo "<script type='text/javascript'>alert('Anda Belum Login');location='../index.php';</script>";
+  }
+  ?>
 
 <body>
 
@@ -37,15 +38,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://disputebills.com"><img src="logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
+            <a class="navbar-brand" href="http://disputebills.com"><img src="../logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
             </a>
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="home.php">Home</a></li>
+              <li class="active"><a href="home.php">Home</a></li>
               <li><a href="reservation.php">Reservation</a></li>
-              <li><a href="about.php">About</a></li>
-              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="#">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
                 <ul class="dropdown-menu" Rerole="menu">
@@ -102,15 +102,28 @@
 
 <div class="background" >
   <div class="transbox" align="center" style="background:gray;opacity:0.9" >
+  <h2>EDIT PROFILE</h2>
+  <br>
 	<form action="edit-proses.php" method="post">
-		<input type="hidden" name="id" value="<?php echo $id; ?>">
+    <?php
+     include('../koneksi.php');
+     $usernamenya = $_SESSION['username'];
+     $sql = "SELECT * FROM user where username = '$usernamenya'";
+
+     if($result=mysqli_query($conn,$sql))
+     {
+         $data = mysqli_fetch_assoc($result);
+
+     }
+   ?>
+		<input type="hidden" name="id" value="<?php echo $data; ?>">
 							<table>
 								<tr>
 									<td>Nama Lengkap</td>
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['nama_lengkap']; ?>">
+										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['first_name']; echo $data['last_name']; ?>">
 									</td>
 								</tr>
 								<tr>
@@ -118,7 +131,7 @@
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="nomor_identitas" size="50" value="<?php echo $data['nomor_identitas']; ?>">
+										<input class="form-control" type="text" name="nomor_identitas" size="50" value="<?php echo $data['no_identitas']; ?>">
 									</td>
 								</tr>
 									<tr>
@@ -126,7 +139,7 @@
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="nomor_telepon" size="50" value="<?php echo $data['nomor_telepon']; ?>">
+										<input class="form-control" type="text" name="nomor_telepon" size="50" value="<?php echo $data['no_telp']; ?>">
 									</td>
 								</tr>
 								<tr>

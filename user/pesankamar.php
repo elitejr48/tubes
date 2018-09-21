@@ -68,7 +68,7 @@
        <header class="heading"> RESERVATION</header><hr></hr>
   	<!---Form starting---->
     <?php
-      include "koneksi.php";
+      include "../koneksi.php";
       $idkamar = $_GET['id_kamar'];
       $idpemesan = $_GET['id_pemesan'];
 
