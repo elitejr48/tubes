@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Reservation</title>
+    <title>History Pemesanan</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
       echo "<script type='text/javascript'>alert('Anda Belum Login');location='index.php';</script>";
     }
     ?>
-  <body>
+  <body style="background-image: url(tes_bg.jpg)" >
 
   <div class="example3">
       <nav class="navbar navbar-inverse navbar-static-top">

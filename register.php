@@ -112,7 +112,7 @@
             <div class="col-sm-12">
   		         <div class="row">
   				     <div class="col-xs-4">
-  		 	              <label class="pass">Confirm Password :</label></div>
+  		 	              <label class="pass">Confirm Password:</label></div>
   				  <div class="col-xs-8">
   			             <input type="confirm_password" name="confirm_password" id="confirm_password" placeholder="Enter your Password " class="form-control">
   				 </div>
@@ -136,8 +136,8 @@
                 </div>
               </div>
   		     <div>
-                <div class="btn btn-warning">Back</div>
-                   <input type="submit" name="tambah" value="Tambah">
+                <div class="sButton"><Button class="bButton" name="back" value="back">Back</div>
+                <input class="sButton" type="submit" name="tambah" value="Tambah">
          </div>
   		 </div>
      </form>
