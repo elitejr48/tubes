@@ -9,17 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../design.css">
-    <script>
-
-    $(document).ready(function(){
-        $("#myBtn").click(function(){
-            $("#myModal").modal();
-        });
-    });
-    </script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <?php
@@ -48,12 +38,10 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="home.php">Home</a></li>
               <li><a href="reservation.php">Reservation</a></li>
-              <li><a href="#">Contact</a></li>
               <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
                 <ul class="dropdown-menu" Rerole="menu">
-                  <li><a href="#">My Profile</a></li>
-                  <li><a href="#">Edit Profile</a></li>
+                  <li><a href="edit_profile.php">My Profile</a></li>
                   <li><a href="#">History</a></li>
                   <li><a id="myBt" href="logout-process.php">Logout</a></li>
                 </ul>

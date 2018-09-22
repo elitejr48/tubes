@@ -30,7 +30,7 @@
   <div class="example3">
       <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header text-center">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -44,12 +44,10 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="home.php">Home</a></li>
               <li class="active"><a href="reservation.php">Reservation</a></li>
-              <li><a href="#">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
                 <ul class="dropdown-menu" Rerole="menu">
-                  <li><a href="#">My Profile</a></li>
-                  <li><a href="#">Edit Profile</a></li>
+                  <li><a href="edit_profile.php">My Profile</a></li>
                   <li><a href="historypemesanan.php">History</a></li>
                   <li><a id="myBt" href="logout-process.php">Logout</a></li>
                 </ul>
@@ -138,13 +136,52 @@
           }
         }
       ?>
-
-
-    <!-- </table> -->
   	 </div>
+     <div class="footer">
+         <div class="contain">
+         <div class="col">
+           <h1>Home</h1>
+           <ul>
+             <li>About</li>
+           </ul>
+         </div>
+         <div class="col">
+           <h1>Products</h1>
+           <ul>
+             <li>About</li>
+           </ul>
+         </div>
+         <div class="col">
+           <h1>Accounts</h1>
+           <ul>
+             <li>About</li>
+           </ul>
+         </div>
+         <div class="col">
+           <h1>Resources</h1>
+           <ul>
+             <li>Webmail</li>
+           </ul>
+         </div>
+         <div class="col">
+           <h1>Support</h1>
+           <ul>
+             <li>Contact us</li>
+           </ul>
+         </div>
+         <div class="col social">
+           <h1>Social</h1>
+           <ul>
+             <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+             <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+             <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+           </ul>
+         </div>
+       <div class="clearfix"></div>
+       </div>
+     </div>
 
-
-  </div
+  </div>
 </div><!-- box -->
   </body>
 </html>

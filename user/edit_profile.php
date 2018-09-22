@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../edit_profile.css">
-  <script>
-  $(document).ready(function(){
-      $("#myBt").click(function(){
-          $("#myModal").modal();
-      });
-  });
-  </script>
-</head>
-
 <?php
   session_start();
   if (!isset($_SESSION['username']))
@@ -32,14 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="reservation.css">
-    <script>
-    $(document).ready(function(){
-        $("#myBt").click(function(){
-            $("#myModal").modal();
-        });
-    });
-    </script>
+    <link rel="stylesheet" type="text/css" href="../edit_profile.css">
   </head>
 <body>
 
@@ -61,12 +35,10 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="home.php">Home</a></li>
               <li><a href="reservation.php">Reservation</a></li>
-              <li><a href="#">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
                 <ul class="dropdown-menu" Rerole="menu">
-                  <li><a href="#">My Profile</a></li>
-                  <li><a href="edit_profile.php">Edit Profile</a></li>
+                  <li><a href="edit_profile.php">My Profile</a></li>
                   <li><a href="historypemesanan.php">History</a></li>
                   <li><a id="myBt" href="logout-process.php">Logout</a></li>
                 </ul>
@@ -139,7 +111,16 @@
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['first_name']; echo $data['last_name']; ?>">
+										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['first_name'];?>">
+                    <br>
+									</td>
+								</tr>
+                <tr>
+									<td>Nama Lengkap</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['last_name']; ?>">
                     <br>
 									</td>
 								</tr>
@@ -189,25 +170,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td>old password</td>
-								</tr>
-								<tr>
-									<td>
-										<input class="form-control" type="old_password" name="old_password" size="50">
-                    <br>
-									</td>
-								</tr>
-								<tr>
-									<td>new Password</td>
-								</tr>
-								<tr>
-									<td>
-										<input class="form-control" type="new_password" name="new_password" size="50">
-                    <br>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2" align="center"><button type="submit" name="simpan" class="btn btn-primary">SIMPAN</button></td>
+									<td colspan="2" align="center"><button type="submit" name="simpan" class="btn btn-primary">Ubah</button></td>
                   <br>
 								</tr>
 							</table>
@@ -215,60 +178,49 @@
   </div>
 </div>
 
-    <div class="footer">
-        <div class="contain">
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="about.php">About</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="kebijakan.php">Kebijakan</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="room.php">Room</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="facilities.php">Facilities</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="contact_us.php">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="col social">
-          <h1>Social</h1>
-          <ul>
-            <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-            <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-            <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
-          </ul>
-        </div>
-      <div class="clearfix"></div>
-      </div>
+<div class="footer">
+    <div class="contain">
+    <div class="col">
+      <h1>Home</h1>
+      <ul>
+        <li>About</li>
+      </ul>
     </div>
-
-        <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-        </script>
+    <div class="col">
+      <h1>Products</h1>
+      <ul>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Accounts</h1>
+      <ul>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Resources</h1>
+      <ul>
+        <li>Webmail</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Support</h1>
+      <ul>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1>Social</h1>
+      <ul>
+        <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+      </ul>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+</div>
 
 </body>
 </html>

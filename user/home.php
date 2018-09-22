@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../design.css">
   </head>
-
+  <script>
+  $(document).ready(function(){
+      $("#myBt").click(function(){
+          $("#myModal").modal();
+      });
+  });
+  </script>
   <?php
     session_start();
     if (!isset($_SESSION['username']))
@@ -38,7 +44,6 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="reservation.php">Reservation</a></li>
-              <li><a href="#">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
                 <ul class="dropdown-menu" Rerole="menu">

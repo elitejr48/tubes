@@ -38,8 +38,7 @@
       <div id="navbar3" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.php">Home</a></li>
-          <li><a href="reservation.php">Reservation</a></li>
-          <li><a href="about.php">About</a></li>
+          <li class="active"><a href="about.php">About</a></li>
           <li><a href="facilities.php">Facilities</a></li>
           <li><a id="myBt" href="#">Login / Register</a></li>
           <!-- <li><button type="button" class="btn" id="myBtn">Login</button></li> -->
@@ -89,50 +88,47 @@
 <div class="background">
   <div class="transbox">
      <h1 style="text-align: center" class="Kebijakan Hotel"><b>Kebijakan Hotel</b></h1>
-        <br>
-        <br>
-    	<p style="text-align: justify" >
-      	<br>
+    	<p style="text-align: justify">
       	1.	Tarif yang disebutkan berdasarkan masa menginap Anda.
-      	<br>
+      	<br><br>
       	2.	Tarif dapat berubah karena perubahan tanggal kedatangan atau keberangkatan Anda.
-      	<br>
+      	<br><br>
       	3.	Jika tamu melakukan pemesanan berdasarkan tarif yang salah dimuat,
-      	<br>
+      	<br><br>
       		menurut kebijakannya Hotel berhak mengoreksi ke tarif yang benar atau membatalkan reservasi,
-      	<br>
+      	<br><br>
       		dan takan terlebih dahulu menghubungi tamu tersebut secara langsung.
-      	<br>
+      	<br><br>
       	4.	Anda harus berusia minimal 18 tahun untuk check-in dan memesan kamar.
-      	<br>
+      	<br><br>
       	5.	Waktu check-in adalah dari 15.00 dan waktu check-out terahkir adalah 11.00.
-      	<br>
+      	<br><br>
       	6.	Diperlukan tanda pengenal resmi atau paspor yang berlaku saat check-in.
-      	<br>
+      	<br><br>
       	7.	Bila Anda tiba di hotel sebelum waktu check-in normal, Anda disarankan mendatangi Meja Layanan Tamu Hotel untuk mendapatkan bantuan menyimpan bawaan Anda hingga waktu check-in.
-      	<br>
+      	<br><br>
       	8.	Jika datang lebih awal, Anda juga disarankan untuk mempertimbangkan melakukan reservasi pada malam sebelum kedatangan Anda.
-      	<br>
+      	<br><br>
       	9.	Check-out terlambat diperbolehkan berdasarkan permintaan, tergantung ketersediaan kamar dan tingkat hunian.
-      	<br>
+      	<br><br>
       	10.	Tanyakan ke Meja Resepsionis Hotel minimal 24 jam sebelum keberangkatan mengenai ketersediaan check-out terlambat.
-      	<br>
+      	<br><br>
       	11. Biaya kamar separuh hari mungkin dikenakan untuk check-out terlambat antara pukul 12.00 hingga 18.00,
       	 <br>dan biaya kamar penuh mungkin dikenakan untuk check-out terlambat setelah pukul 18.00.
-      	<br>
+      	<br><br>
       	12. Pembatalan atau perubahan reservasi harus dilakukan 48 jam setelah reservasi.
-      	<br>
+      	<br><br>
       	13.`Dengan melanjutkan ke reservasi, berarti Anda setuju dan mengetahui bahwa jika reservasi ini diterima oleh Hotel,
       	<br>maka selanjutnya masa tinggal Anda tunduk pada syarat dan ketentuan standar tinggal di Hotel ini.
-      	<br>
+      	<br><br>
       	14. Hotel ini dapat, berdasarkan kebijakan mutlaknya, membatalkan reservasi ini, jika Hotel berpendapat bahwa informasi yang diberikan
       		<br>dalam pemesanan ini tidak benar atau tidak lengkap.
-      	<br>
+      	<br><br>
       	15.	Hotel berhak mengubah, mengamandemen, atau menganti syarat dan ketentuan ini kapan saja tanpa pemberitahuan sebelumnya.
-      	<br>
+      	<br><br>
       	16. Anda harus mengganti rugi dan melepaskan Hotel dari Tanggung jawab sehubungan dengan kewajiban, kerugian, kerusakan, biaya,
       		<br>dan pengeluaran apa pun yang disebabkan oleh, dan/atau sehubungan dengan penerimaan reservasi oleh Hotel.
-      	<br>
+      	<br><br>
       	17.	Hotel tidak akan bertanggung jawab dari segala kerugian, kerusakan, atau pengeluaran yang muncul dari pembatalan reservasi oleh Hotel.
       </p>
     </div>
