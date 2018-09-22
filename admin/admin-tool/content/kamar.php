@@ -79,25 +79,30 @@
                </tr>
 
                <?php
-                include('D:\xampp\htdocs\tubes\koneksi.php');
-
-                $sql = "SELECT * FROM kamar";
-
+                include('../../koneksi.php');
+                $halaman = 5;
+                $pages = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
+                $mulai = ($pages>1) ? ($pages * $halaman) - $halaman : 0;
+                $sql = "SELECT * FROM kamar LIMIT $mulai, $halaman";
+                $result1 = mysqli_query($conn,"SELECT * FROM kamar");
+                $no = $mulai + 1;
                 if($result=mysqli_query($conn,$sql))
                 {
+                  $total = mysqli_num_rows($result1);
+                  $pages = ceil($total/$halaman);
                   if(mysqli_num_rows(mysqli_query($conn,$sql)) != 0)
                   {
-                  $no = 1;
+
                     while($data = mysqli_fetch_assoc($result)){
                         echo '<tr>';
-                            echo '<td>'.$no.'</td>';
-                            echo '<td width="15%">'.$data['nama_kamar'].'</td>';
-                            echo '<td width="15%">'.$data['tipe_kamar'].'</td>';
+                            echo '<td>'.$no++.'</td>';
+                            echo '<td width="12%">'.$data['nama_kamar'].'</td>';
+                            echo '<td width="12%">'.$data['tipe_kamar'].'</td>';
                             echo '<td width="15%"><center><img src="../admin-tool/image/'.$data['gambar_kamar'].'" width="100%"></center></td>';
-                            echo '<td></td>';
-                            echo '<td></td>';
-                            echo '<td width="10%"><a href="editkamar.php">Edit</a> / <a href="hapuskamar.php">Hapus</a></td>';
-                        $no++;
+                            echo '<td>'.$data['deskripsi'].'</td>';
+                            echo '<td width="15%">Rp. '.$data['harga_kamar'].'</td>';
+                            echo '<td width="10%"><a href="editkamar.php">Edit</a> / <a href="hapuskamar.php">Hapus</a></td>
+                            </tr>';
                     }
                   }
                   else
@@ -112,21 +117,10 @@
           <div class="col-md-12">
              <nav align="center">
                <ul class="pagination">
-                 <li>
-                   <a href="#" aria-label="Previous">
-                     <span aria-hidden="true">&laquo;</span>
-                   </a>
-                 </li>
-                 <li><a href="#">1</a></li>
-                 <li><a href="#">2</a></li>
-                 <li><a href="#">3</a></li>
-                 <li><a href="#">4</a></li>
-                 <li><a href="#">5</a></li>
-                 <li>
-                   <a href="#" aria-label="Next">
-                     <span aria-hidden="true">&raquo;</span>
-                   </a>
-                 </li>
+                 <?php for ($i=1; $i<=$pages ; $i++){ ?>
+                  <li><a href="?kamar&halaman=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+
+                  <?php } ?>
                </ul>
              </nav>
           </div>

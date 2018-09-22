@@ -17,28 +17,28 @@ include 'D:\xampp\htdocs\tubes\koneksi.php';
         {
             $uniquesavename=time().uniqid(rand()).'.jpg';
             move_uploaded_file($file_tmp, 'D:/xampp/htdocs/tubes/admin/admin-tool/image/'.$uniquesavename);
-            $sql = "INSERT INTO kamar VALUES(NULL,'$namakamar','$tipekamar','$uniquesavename','$deskripsi','$harga')";
+            $sql = "INSERT INTO kamar (nama_kamar, tipe_kamar, gambar_kamar, deskripsi, harga_kamar) VALUES('$namakamar','$tipekamar','$uniquesavename','$deskripsi','$harga')";
               if($conn->query($sql) === TRUE)
               {
                   echo "<script type='text/javascript'>alert('Berhasil mengupload file');location='../index.php?kamar';</script>";
               }
               else
               {
-                  echo 'GAGAL MENGUPLOAD GAMBAR';
+                  echo 'GAGAL MENGUPLOAD GAMBAR'.mysqli_error($conn);
               }
         }
         else
         {
-             //echo "<script type='text/javascript'>alert('Ukuran file terlalu besar');location='../index.php?kamar';</script>";
+             echo "<script type='text/javascript'>alert('Ukuran file terlalu besar');location='../index.php?kamar';</script>";
         }
         }
           else
           {
-          //echo "<script type='text/javascript'>alert('Ektensi file yang di upload tidak diperbolehkan');location='../index.php?kamar';</script>";
+          echo "<script type='text/javascript'>alert('Ektensi file yang di upload tidak diperbolehkan');location='../index.php?kamar';</script>";
           }
         }
     else
     {
-    //echo "<script type='text/javascript'>alert('Gagal Mengupload File');location='../index.php?kamar';</script>";
+      echo "<script type='text/javascript'>alert('Gagal Mengupload File');location='../index.php?kamar';</script>";
     }
 ?>

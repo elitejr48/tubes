@@ -44,6 +44,11 @@ body{
      color: white;
      margin-top: 5px;
 }
+
+.w3_main_grid_right {
+    float: right;
+}
+
 .j_kamar{
 	 	margin-left: 1px;
      font-family: sans-serif;
@@ -447,7 +452,11 @@ umn {
 }
 
 .colmargin{
-		margin-top: 2.5%;
+		margin-top: 1.5%;
+}
+
+.colmargin1{
+		margin-top: 4%;
 }
 
 .harga{
@@ -458,7 +467,7 @@ umn {
 	font-weight: bold;
 }
 .row{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 		background: #fff;
 		font-family: sans-serif;
     background-image: initial;

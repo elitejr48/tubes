@@ -37,8 +37,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://disputebills.com"><img src="../logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
-            </a>
+            <a class="navbar-brand" href=""><img src="../logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
+          </a>
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -117,8 +117,8 @@
                         <p>'.$data['nama_kamar'].'</p><br>
                         <p>'.$data['deskripsi'].'</p>
                       </div>
-                      <div class="col-sm-4 colmargin text-center">
-                        <p class="harga">'.buatrp($data['harga_kamar']).'</p><br>
+                      <div class="col-sm-4 colmargin1 text-center">
+                        <p class="harga" style="font-size:30px;">'.buatrp($data['harga_kamar']).'</p><br>
                         <div class="button-effect">
                           <a href="pesankamar.php?id_kamar='.$data['id_kamar'].'&id_pemesan='.$_SESSION['id'].'" style="text-decoration:none" class="effect effect-2" href="#" title="Learn More">Pesan</a>
                         </div>

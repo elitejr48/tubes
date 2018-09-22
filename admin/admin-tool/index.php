@@ -36,9 +36,9 @@
          {
                include "content/kamar.php";
          }
-         else if(isset($_GET['stokkamar']))
+         else if(isset($_GET['order']))
          {
-               include "content/stokkamar.php";
+               include "content/order.php";
          }
          else if(isset($_GET['laporan']))
          {

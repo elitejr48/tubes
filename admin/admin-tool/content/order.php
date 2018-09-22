@@ -78,12 +78,12 @@
          </div>
             <table class="table table-bordered">
                <tr>
-                  <th class="info">Nama</th>
-                  <th class="info">Nomor Identitas</th>
-                  <th class="info">Nomor Telepon</th>
-                  <th class="info">Email</th>
-                  <th class="info">Alamat</th>
-                  <th class="info">Gender</th>
+                  <th class="info">Nama Pemesan</th>
+                  <th class="info">Nama Kamar</th>
+                  <th class="info">Tanggal Transaksi</th>
+                  <th class="info">Tanggal Menginap</th>
+                  <th class="info">Jumlah Hari</th>
+                  <th class="info">Total Harga</th>
                   <th class="info">Status</th>
                   <th class="info" colspan="2">Action</th>
                </tr>
@@ -91,7 +91,8 @@
                <?php
                 include('D:\xampp\htdocs\tubes\koneksi.php');
 
-                $sql = "SELECT * FROM user where status='2' ORDER BY id ASC";
+                $sql = "SELECT user.first_name, user.last_name, pemesanan.tgl_transaksi, pemesanan.tgl_menginap, kamar.nama_kamar, pemesanan.hari_menginap, pemesanan.total_harga, pemesanan.status, pemesanan.id_pemesanan
+                FROM pemesanan inner join user on pemesanan.id_pemesan = user.id inner join kamar on pemesanan.id_kamar = kamar.id_kamar order by pemesanan.tgl_transaksi DESC";
 
                 if($result=mysqli_query($conn,$sql))
                 {
@@ -101,27 +102,31 @@
                     while($data = mysqli_fetch_assoc($result))
                     {
                         echo '<tr>';
-                          echo '<td>'.$data['first_name'].'</td>';
-                          echo '<td>'.$data['no_identitas'].'</td>';
-                          echo '<td>'.$data['no_telp'].'</td>';
-                          echo '<td>'.$data['email'].'</td>';
-                          echo '<td>'.$data['alamat'].'</td>';
-                          if($data['gender']=='M'){
-                            echo '<td>Pria</td>';
-                          }
-                          else
-                          {
-                            echo '<td>Wanita</td>';
-                          }
-                          if($data['verification'] == 1)
+                          echo '<td>'.$data['first_name'].'&nbsp'.$data['last_name'].'</td>';
+                          echo '<td>'.$data['nama_kamar'].'</td>';
+                          echo '<td>'.$data['tgl_transaksi'].'</td>';
+                          echo '<td>'.$data['tgl_menginap'].'</td>';
+                          echo '<td>'.$data['hari_menginap'].' hari</td>';
+                          echo '<td>Rp. '.$data['total_harga'].'</td>';
+                          if($data['status'] == 1)
                           {
                             echo '<td>Sudah Verifikasi</td>';
                           }
-                          else {
+                          else if($data['status'] == 0) {
                             echo '<td>Belum Verifikasi</td>';
                           }
-                          echo '<td><a href="edit.php?id='.$data['id'].'">
-                          Edit</a> / <a href="hapus.php?id='.$data['id'].'" onclick="return confirm(\'Yakin?\')">Hapus</a></td>';
+                          else if($data['status'] == 2) {
+                            echo '<td>Dibatalkan</td>';
+                          }
+
+                          if($data['status'] == '0')
+                          {
+                            echo '<td><a href="konfirmasi.php?id='.$data['id_pemesanan'].'">
+                            Konfirmasi</a> / <a href="batal.php?id='.$data['id_pemesanan'].'" onclick="return confirm(\'Yakin?\')">Batalkan</a></td>';
+                          }
+                          else {
+
+                          }
                           echo '</tr>';
 
                         $no++;
