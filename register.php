@@ -126,7 +126,7 @@
                 </div>
 
                   <div class="col-xs-4 male">
-                    <input type="radio" name="gender"  id="gender" value="M">Male</input>
+                    <input type="radio" name="gender"  id="gender" value="M" checked="checked">Male</input>
                 </div>
 
                 <div class="col-xs-4 female">
