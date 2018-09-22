@@ -12,6 +12,9 @@ body{
 			 font-size: 20px;
 
 }
+td{
+	padding: 20px;
+}
 
 .header ul
 {
@@ -43,8 +46,8 @@ li a:hover
 
 .TEXT
 {
-    width: 5cm;
-    height: 2.5cm;
+    width: 7cm;
+    height: 4cm;
 }
 
 .button
