@@ -101,7 +101,7 @@
                     while($data = mysqli_fetch_assoc($result))
                     {
                         echo '<tr>';
-                          echo '<td>'.$data['first_name'].'</td>';
+                          echo '<td>'.$data['first_name'].' '.$data['last_name'].'</td>';
                           echo '<td>'.$data['no_identitas'].'</td>';
                           echo '<td>'.$data['no_telp'].'</td>';
                           echo '<td>'.$data['email'].'</td>';

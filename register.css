@@ -1,7 +1,7 @@
 /*-----Background-----*/
 
 body{
-	 background-image:url(https://s3.envato.com/files/243754334/primag.jpg);
+	 background-image:url(register.jpg);
 	 background-repeat:no-repeat;
 	 background-size:cover;
 	 width:100%;
@@ -11,22 +11,23 @@ body{
 }
 
 /*-----for border----*/
-.container{
+.contentfp{
 	font-family:Roboto,sans-serif;
 	  background-image:url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg) ;
 
      border-style: 1px solid grey;
      margin: 0 auto;
      opacity: 0.8;
-     text-align: right;
      padding-left:10px;
      margin-top: 67px;
      box-shadow: 2px 5px 5px 0px #eee;
      max-width: 500px;
      padding-top: 10px;
-     height: 600px;
+     padding-bottom: 10px;
      margin-top: 166px;
+     color: white;
 }
+
 /*--- for label of first and last name---*/
 .lastname{
 	 margin-left: 1px;
@@ -201,7 +202,7 @@ input[type=submit]{
 .bButton{
 	background-color: #4CAF50; /* Green */
 	border: none;
-	
+
 }
 
 .sButton{

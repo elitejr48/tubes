@@ -10,6 +10,13 @@
         });
     });
     </script>
+    <script>
+    $(document).ready(function(){
+        $("#myBt1").click(function(){
+            $("#myModal1").modal();
+        });
+    });
+      </script>
 
     <div class="col-md-10" style="padding:0px">
       <ol class="breadcrumb" style="margin:0;border-radius:0;">
@@ -22,6 +29,48 @@
             <button class="btn btn-info" id="myBt">Tambah</button>
          </div>
 
+         <div class="modal fade" id="myModal1" role="dialog">
+         <div class="modal-dialog">
+
+           <!-- Modal content(untuk Tambah)-->
+         <div class="modal-content">
+           <form action="content/input-kamar.php" method="post" enctype="multipart/form-data">
+               <div class="modal-header" style="padding:30px 50px;">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4><center>Edit Kamar</center></h4>
+               </div>
+               <div class="modal-body" style="padding:40px 50px;">
+                       <div class="form-group">
+                         <label for="usrname">Nama Kamar</label>
+                         <input type="text" name="namakamar" class="form-control" id="namakamar" value=""/>
+                       </div>
+                       <div class="form-group">
+                         <label for="psw">Tipe Kamar</label>
+                         <input type="text" class="form-control" name="tipekamar" id="tipekamar" placeholder="cth. Superior"/>
+                       </div>
+                       <div class="form-group">
+                         <label for="usrname">Gambar</label>
+                         <input type="file" name="berkas" />
+                       </div>
+                       <div class="form-group">
+                         <label for="psw">Deskirpsi</label>
+                         <input type="text" class="form-control" name="deskripsi" id="tipekamar" placeholder="cth. Superior"/>
+                       </div>
+                       <div class="form-group">
+                         <label for="psw">Harga</label>
+                         <input type="text" class="form-control" name="harga" id="tipekamar" placeholder="cth. Superior"/>
+                       </div>
+                       <br>
+                       <input type="submit" name="upload" value="upload" />
+               </div>
+               <div class="modal-footer">
+                   <!-- <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button> -->
+               </div>
+             </form>
+           </div>
+
+         </div>
+         </div>
          <!--Modal-->
         <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -101,7 +150,7 @@
                             echo '<td width="15%"><center><img src="../admin-tool/image/'.$data['gambar_kamar'].'" width="100%"></center></td>';
                             echo '<td>'.$data['deskripsi'].'</td>';
                             echo '<td width="15%">Rp. '.$data['harga_kamar'].'</td>';
-                            echo '<td width="10%"><a href="editkamar.php">Edit</a> / <a href="hapuskamar.php">Hapus</a></td>
+                            echo '<td width="10%"><a href="&namakamar='.$data['nama_kamar'].'" id="myBt1">Edit</a> / <a href="hapuskamar.php">Hapus</a></td>
                             </tr>';
                     }
                   }

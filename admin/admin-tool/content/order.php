@@ -12,70 +12,13 @@
     <div class="col-md-10" style="padding:0px">
       <ol class="breadcrumb" style="margin:0;border-radius:0;">
          <li><a href="index.php">Home</a></li>
-         <li class="active">Data User</li>
+         <li class="active">Order</li>
       </ol>
    </div>
  <div class="col-md-10" style="min-height:600px">
    <!--Modal-->
-  <div class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content(untuk Tambah)-->
-  <div class="modal-content">
-    <form action="content/registeradmin.php" method="post">
-        <div class="modal-header" style="padding:30px 50px;">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><center>Tambah Kamar</center></h4>
-        </div>
-        <div class="modal-body" style="padding:40px 50px;">
-                <div class="form-group">
-                  <label for="usrname">First Name</label>
-                  <input type="text" name="fname" class="form-control" id="namakamar" placeholder="cth. Sriwijaya"/>
-                </div>
-                <div class="form-group">
-                  <label for="psw">Last Name</label>
-                  <input type="text" class="form-control" name="lname" id="tipekamar" placeholder="cth. Superior"/>
-                </div>
-                <div class="form-group">
-                  <label for="usrname">Username</label>
-                  <input type="text" class="form-control" name="username" id="tipekamar" placeholder="cth. Superior"/>
-                </div>
-                <div class="form-group">
-                  <label for="usrname">Nomor Identitas</label>
-                  <input type="text" class="form-control" name="identitas" id="tipekamar" placeholder="cth. Superior"/>
-                </div>
-                <div class="form-group">
-                  <label for="usrname">Nomor Telepon</label>
-                  <input type="text" class="form-control" name="no_telp" id="tipekamar" placeholder="cth. Superior"/>
-                </div>
-                <div class="form-group">
-                  <label for="usrname">Email</label>
-                  <input type="text" class="form-control" name="email" id="tipekamar" placeholder="cth. Superior"/>
-                </div>
-                <div class="form-group">
-                  <label for="usrname">Alamat</label>
-                  <input type="text" class="form-control" name="alamat" id="tipekamar" placeholder="cth. Superior"/>
-                </div>
-                <div class="form-group">
-                  <label for="usrname">Password</label>
-                  <input type="text" class="form-control" name="password" id="tipekamar" placeholder="cth. Superior"/>
-                </div>
-
-                <br>
-                <input type="submit" name="tambah" value="upload" />
-        </div>
-        <div class="modal-footer">
-            <!-- <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button> -->
-        </div>
-      </form>
-    </div>
-
-  </div>
-  </div>
   <!--end modal-->
 
-         <div class="col-md-12" style="padding:10px; padding-left:0;padding-right:0;">
-            <button class="btn btn-info" id="myBt">Tambah</button>
-         </div>
             <table class="table table-bordered">
                <tr>
                   <th class="info">Nama Pemesan</th>
@@ -85,13 +28,13 @@
                   <th class="info">Jumlah Hari</th>
                   <th class="info">Total Harga</th>
                   <th class="info">Status</th>
-                  <th class="info" colspan="2">Action</th>
+                  <th class="info" width="16%" colspan="2">Action</th>
                </tr>
 
                <?php
                 include('D:\xampp\htdocs\tubes\koneksi.php');
 
-                $sql = "SELECT user.first_name, user.last_name, pemesanan.tgl_transaksi, pemesanan.tgl_menginap, kamar.nama_kamar, pemesanan.hari_menginap, pemesanan.total_harga, pemesanan.status, pemesanan.id_pemesanan
+                $sql = "SELECT user.first_name, user.last_name, user.email, pemesanan.tgl_transaksi, pemesanan.tgl_menginap, kamar.nama_kamar, pemesanan.hari_menginap, pemesanan.total_harga, pemesanan.status, pemesanan.id_pemesanan
                 FROM pemesanan inner join user on pemesanan.id_pemesan = user.id inner join kamar on pemesanan.id_kamar = kamar.id_kamar order by pemesanan.tgl_transaksi DESC";
 
                 if($result=mysqli_query($conn,$sql))
@@ -121,11 +64,16 @@
 
                           if($data['status'] == '0')
                           {
-                            echo '<td><a href="konfirmasi.php?id='.$data['id_pemesanan'].'">
-                            Konfirmasi</a> / <a href="batal.php?id='.$data['id_pemesanan'].'" onclick="return confirm(\'Yakin?\')">Batalkan</a></td>';
+                            echo '<td><a class="btn btn-primary" href="content/konfirmasi.php?id='.$data['id_pemesanan'].'&email='.$data['email'].'&nama='.$data['first_name'].' '.$data['last_name'].'&namakamar='.$data['nama_kamar'].'&tgl_transaksi='.$data['tgl_transaksi'].'&tgl_menginap='.$data['tgl_menginap'].'&hari_menginap='.$data['hari_menginap'].'
+                            "onclick="return confirm(\'Apakah ingin melakukan verifikasi?\')">
+                            Konfirmasi</a> <a class="btn btn-danger" href="content/batal.php?id='.$data['id_pemesanan'].'" onclick="return confirm(\'Batalkan pesanan?\')">Batalkan</a></td>';
+                          }
+                          else if($data['status'] == '1'){
+                            echo '<td align="center"><a class="btn btn-success" href="content/sendemail.php?email='.$data['email'].'&nama='.$data['first_name'].' '.$data['last_name'].'&namakamar='.$data['nama_kamar'].'&tgl_transaksi='.$data['tgl_transaksi'].'&tgl_menginap='.$data['tgl_menginap'].'&hari_menginap='.$data['hari_menginap'].' "onclick="return confirm(\'Apakah ingin melakukan verifikasi?\')">
+                            Send Email Info</a>';
                           }
                           else {
-
+                            echo '<td></td>';
                           }
                           echo '</tr>';
 

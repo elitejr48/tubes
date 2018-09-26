@@ -76,7 +76,6 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
             <p>Not a member? <a href="register.php">Sign Up</a></p>
             <p>Forgot <a href="#">Password?</a></p>
           </div>

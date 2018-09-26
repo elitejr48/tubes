@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://disputebills.com"><img src="logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
+          <a class="navbar-brand" href="index.php"><img src="logo 1 edit.png" alt="Dispute Bills" style="max-height: 155%" >
           </a>
         </div>
         <div id="navbar3" class="navbar-collapse collapse">
@@ -73,7 +73,6 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
               <p>Not a member? <a href="register.php">Sign Up</a></p>
               <p>Forgot <a href="#">Password?</a></p>
             </div>

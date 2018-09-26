@@ -1,4 +1,4 @@
-<?php
+  <?php
   session_start();
   if (!isset($_SESSION['username']))
   {
@@ -114,20 +114,21 @@
 		<input type="hidden" name="id" value="<?php echo $data; ?>">
 							<table>
 								<tr>
-									<td>Nama Lengkap</td>
+									<td>Nama Depan</td>
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['first_name'];?>">
+                    <input class="form-control" type="hidden" name="id" size="50" value="<?php echo $data['id'];?>">
+										<input class="form-control" type="text" name="nama_depan" size="50" value="<?php echo $data['first_name'];?>">
                     <br>
 									</td>
 								</tr>
                 <tr>
-									<td>Nama Lengkap</td>
+									<td>Nama Belakang</td>
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="nama_lengkap" size="50" value="<?php echo $data['last_name']; ?>">
+										<input class="form-control" type="text" name="nama_belakang" size="50" value="<?php echo $data['last_name']; ?>">
                     <br>
 									</td>
 								</tr>
@@ -149,15 +150,6 @@
                     <br>
 									</td>
 								</tr>
-								<tr>
-									<td>Email</td>
-								</tr>
-								<tr>
-									<td>
-										<input class="form-control" type="email" name="email" size="50" value="<?php echo $data['email']; ?>">
-                    <br>
-									</td>
-								</tr>
 									<tr>
 									<td>Alamat</td>
 								</tr>
@@ -167,17 +159,26 @@
                     <br>
 									</td>
 								</tr>
+                <tr>
+									<td>Email</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="form-control" type="email" name="email" size="50" value="<?php echo $data['email']; ?> " readonly="readonly">
+                    <br>
+									</td>
+								</tr>
 								<tr>
 									<td>Username</td>
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="username" size="50" value="<?php echo $data['username']; ?>">
+										<input class="form-control" type="text" name="username" size="50" value="<?php echo $data['username']; ?>" readonly="readonly">
                     <br>
 									</td>
 								</tr>
 								<tr>
-									<td colspan="2" align="center"><button type="submit" name="simpan" class="btn btn-primary">Ubah</button></td>
+									<td colspan="2" align="center"><button type="submit" name="edit" class="btn btn-primary">Ubah</button></td>
                   <br>
 								</tr>
 							</table>

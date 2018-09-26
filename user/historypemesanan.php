@@ -25,7 +25,7 @@
       echo "<script type='text/javascript'>alert('Anda Belum Login');location='index.php';</script>";
     }
     ?>
-  <body style="background-image: url(tes_bg.jpg)" >
+  <body>
 
   <div class="example3">
       <nav class="navbar navbar-inverse navbar-static-top">
@@ -104,6 +104,9 @@
                     }
                     else if($data['status'] == 1) {
                       echo '<td>Accepted</td>';
+                    }
+                    else if($data['status'] == 2) {
+                      echo '<td>Declined</td>';
                     }
                 $no++;
             }

@@ -9,13 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../design.css">
   </head>
-  <script>
-  $(document).ready(function(){
-      $("#myBt").click(function(){
-          $("#myModal").modal();
-      });
-  });
-  </script>
   <?php
     session_start();
     if (!isset($_SESSION['username']))
@@ -47,8 +40,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <?php echo $_SESSION['username'];?>  <span class="caret"></span></a>
                 <ul class="dropdown-menu" Rerole="menu">
-                  <li><a href="#">My Profile</a></li>
-                  <li><a href="edit_profile.php">Edit Profile</a></li>
+                  <li><a href="edit_profile.php">My Profile</a></li>
                   <li><a href="historypemesanan.php">History</a></li>
                   <li><a id="myBt" href="logout-process.php">Logout</a></li>
                 </ul>
@@ -144,10 +136,11 @@
     </a>
   </div>
 
+  <div class="text-center"><p class="why"><br>Why Choose Sun Hotel?</p></div>
   <div class="row">
-    <div class="column">
+    <div class="col-md-3">
       <div class="home-image">
-        <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200006/Option-1-Secure-Transaction.png" alt="Snow">
+        <img class="image1" src="../icon1.png" alt="Snow">
       </div>
       <div class="home-introduction">
     	   <h3>Various &amp; Secure Online Transaction</h3>
@@ -155,57 +148,66 @@
     	</div>
     </div>
 
-    <div class="column">
+    <div class="col-md-3">
       <div class="home-image">
-        <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200007/Option-2-best-rate.png" alt="Forest">
+        <img class="image1" src="../icon2.png" alt="Forest">
       </div>
       <div class="home-introduction">
-    	   <h3>Various &amp; Secure Online Transaction</h3>
-    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
+    	   <h3>Book direct and get more value</h3>
+    	    <p>When you book direct with us you get more than just our basic inclusions. Free breakfast, free WiFi and more inclusions... free airport pickup, laundry, shuttle service, etc*. Inclusions can be varied between hotels.</p>
     	</div>
     </div>
 
-    <div class="column">
+    <div class="col-md-3">
       <div class="home-image">
-        <img class="image1" src="http://ddu8m2w546qhm.cloudfront.net/wp-content/uploads/1/2016/06/15200008/option-3-no-hidden-price.png" alt="Mountains">
+        <img class="mx-auto d-block" src="../icon4.png" alt="Mountains">
       </div>
       <div class="home-introduction">
-    	   <h3>Various &amp; Secure Online Transaction</h3>
-    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
+    	   <h3>Customer Reviews</h3>
+    	    <p>Curious what other travelers think about our hotels ? Read reviews from real guests to make your decision easier.</p>
+    	</div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="home-image">
+        <img class="mx-auto d-block" src="../icon3.png" alt="Mountains">
+      </div>
+      <div class="home-introduction">
+    	   <h3>Best Available Rates</h3>
+    	    <p>We guarantee you will get the best rates when you book with us. Become our loyalty program members to get our exclusive rates and benefits.</p>
     	</div>
     </div>
   </div>
-
   <div class="footer">
       <div class="contain">
       <div class="col">
+        <h1>Home</h1>
         <ul>
-          <br>
-          <li><a href="about.php">About</a></li>
+          <li>About</li>
         </ul>
       </div>
       <div class="col">
+        <h1>Products</h1>
         <ul>
-          <br>
-          <li><a href="kebijakan.php">Kebijakan</a></li>
+          <li>About</li>
         </ul>
       </div>
       <div class="col">
+        <h1>Accounts</h1>
         <ul>
-          <br>
-          <li><a href="room.php">Room</a></li>
+          <li>About</li>
         </ul>
       </div>
       <div class="col">
+        <h1>Resources</h1>
         <ul>
-          <br>
-          <li><a href="facilities.php">Facilities</a></li>
+          <li>Webmail</li>
         </ul>
       </div>
       <div class="col">
+        <h1>Support</h1>
         <ul>
-          <br>
-          <li><a href="contact_us.php">Contact us</a></li>
+          <li>Contact us</li>
         </ul>
       </div>
       <div class="col social">

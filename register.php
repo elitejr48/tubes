@@ -21,7 +21,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container contentfp">
    <!---heading---->
        <header class="heading"> Registration-Form</header><hr></hr>
   	<!---Form starting---->
@@ -34,7 +34,7 @@
   			     <div class="col-xs-4">
             	         <label class="firstname">First Name :</label> </div>
   		         <div class="col-xs-8">
-  		             <input type="text" name="fname" id="fname" placeholder="Enter your First Name" class="form-control ">
+  		             <input type="text" name="fname" id="fname" placeholder="Enter your First Name" class="form-control" required>
                </div>
   		      </div>
   		 </div>
@@ -45,7 +45,7 @@
   			     <div class="col-xs-4">
                        <label class="lastname">Last Name :</label></div>
   				<div class ="col-xs-8">
-  		             <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" class="form-control last">
+  		             <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" class="form-control last" required>
                   </div>
   		     </div>
   		 </div>
@@ -55,7 +55,7 @@
             <div class="col-xs-4">
                   <label class="username" >Username :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="username"  id="username" placeholder="Enter your username" class="form-control" >
+                 <input type="text" name="username"  id="username" placeholder="Enter your username" class="form-control" required>
               </div>
           </div>
       </div>
@@ -65,7 +65,7 @@
             <div class="col-xs-4">
                   <label class="no_id" >Nomor Identitas :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="identitas"  id="identitas" placeholder="Enter your identity number" class="form-control" >
+                 <input type="text" name="identitas"  id="identitas" placeholder="Enter your identity number" class="form-control" required >
               </div>
           </div>
       </div>
@@ -75,7 +75,7 @@
             <div class="col-xs-4">
                   <label class="no_telp" >Nomor Telepon :</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="no_telp"  id="no_telp"placeholder="Enter your Telephone Number" class="form-control" >
+                 <input type="text" name="no_telp"  id="no_telp"placeholder="Enter your Telephone Number" class="form-control" required>
               </div>
           </div>
       </div>
@@ -85,7 +85,7 @@
   			     <div class="col-xs-4">
   		             <label class="email" >Email :</label></div>
   			     <div class="col-xs-8"	>
-  			          <input type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" >
+  			          <input type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" required>
   		         </div>
   		     </div>
   		 </div>
@@ -93,9 +93,9 @@
   		 <div class="col-sm-12">
   		     <div class="row">
   			     <div class="col-xs-4">
-  		             <label class="alamat" >alamat :</label></div>
+  		             <label class="alamat" >Alamat :</label></div>
   			     <div class="col-xs-8"	>
-  			          <input type="text" name="alamat"  id="alamat"placeholder="Enter your address" class="form-control" >
+  			          <input type="text" name="alamat"  id="alamat"placeholder="Enter your address" class="form-control" required>
   		         </div>
   		     </div>
   		 </div>
@@ -105,7 +105,7 @@
   				     <div class="col-xs-4">
   		 	              <label class="pass">Password :</label></div>
   				  <div class="col-xs-8">
-  			             <input type="password" name="password" id="password" placeholder="Enter your Password" class="form-control">
+  			             <input type="password" name="password" id="password" placeholder="Enter your Password" class="form-control" required>
   				 </div>
             </div>
   		      </div>
@@ -114,7 +114,7 @@
   				     <div class="col-xs-4">
   		 	              <label class="pass">Confirm Password:</label></div>
   				  <div class="col-xs-8">
-  			             <input type="confirm_password" name="confirm_password" id="confirm_password" placeholder="Enter your Password " class="form-control">
+  			             <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter your Password " class="form-control" required>
   				 </div>
             </div>
   		      </div>
@@ -134,10 +134,13 @@
                   </div>
 
                 </div>
+                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
               </div>
+              <!-- <input type="button" class="bButton" name="back" value="Kembali" onclick="location.href = 'index.php';"> -->
+              
   		     <div>
-                <div class="sButton"><Button class="bButton" name="back" value="back">Back</div>
-                <input class="sButton" type="submit" name="tambah" value="Tambah">
+                  
+                  
          </div>
   		 </div>
      </form>

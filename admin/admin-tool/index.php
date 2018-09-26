@@ -48,6 +48,10 @@
          {
               include "content/logout.php";
          }
+         else if(isset($_GET['konfirmasi']))
+         {
+              include "content/konfirmasi.php";
+         }
          else
          {
             include "content/home.php";

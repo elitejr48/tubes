@@ -26,7 +26,7 @@
     }
     else if (isset($_SESSION['admin']))
     {
-      echo "<script type='text/javascript'>alert('Anda Sudah Login');location='admin/admin-tool/index.php';</script>";
+      echo "<script type='text/javascript'>location='admin/admin-tool/index.php';</script>";
     }
     ?>
 
@@ -81,16 +81,12 @@
                   <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
                   <input type="password" class="form-control" name="password" id="psw" placeholder="Enter password">
                 </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" value="" checked>Remember me</label>
-                </div>
                   <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
               <p>Not a member? <a href="register.php">Sign Up</a></p>
-              <p>Forgot <a href="#">Password?</a></p>
+              <p>Forgot <a href="forgotpassword.php">Password?</a></p>
             </div>
           </form>
           </div>
@@ -145,8 +141,9 @@
     </a>
   </div>
 
+  <div class="text-center"><p class="why"><br>Why Choose Sun Hotel?</p></div>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div class="home-image">
         <img class="image1" src="icon1.png" alt="Snow">
       </div>
@@ -156,23 +153,33 @@
     	</div>
     </div>
 
-    <div class="col-md-4 py-1">
+    <div class="col-md-3">
       <div class="home-image">
         <img class="image1" src="icon2.png" alt="Forest">
       </div>
       <div class="home-introduction">
-    	   <h3>Various &amp; Secure Online Transaction</h3>
-    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
+    	   <h3>Book direct and get more value</h3>
+    	    <p>When you book direct with us you get more than just our basic inclusions. Free breakfast, free WiFi and more inclusions... free airport pickup, laundry, shuttle service, etc*. Inclusions can be varied between hotels.</p>
     	</div>
     </div>
 
-    <div class="col-md-4 py-1">
+    <div class="col-md-3">
+      <div class="home-image">
+        <img class="mx-auto d-block" src="icon4.png" alt="Mountains">
+      </div>
+      <div class="home-introduction">
+    	   <h3>Customer Reviews</h3>
+    	    <p>Curious what other travelers think about our hotels ? Read reviews from real guests to make your decision easier.</p>
+    	</div>
+    </div>
+
+    <div class="col-md-3">
       <div class="home-image">
         <img class="mx-auto d-block" src="icon3.png" alt="Mountains">
       </div>
       <div class="home-introduction">
-    	   <h3>Various &amp; Secure Online Transaction</h3>
-    	    <p>We guarantee the security and privacy of your online transaction with RapidSSL 256-bit data encryption. With various payment options that you can choose. From credit &amp; debit card with Visa / Mastercard / JCB / AMEX logo, bank transfer via BCA Virtual Account, and pay at the hotel.</p>
+    	   <h3>Best Available Rates</h3>
+    	    <p>We guarantee you will get the best rates when you book with us. Become our loyalty program members to get our exclusive rates and benefits.</p>
     	</div>
     </div>
   </div>

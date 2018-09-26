@@ -13,7 +13,7 @@
     {
       if(mysqli_num_rows(mysqli_query($conn,$sql)) != 0)
       {
-        $sql1 = "update user set verification=1 where email='$email'";
+        $sql1 = "update user set verification=1,unique_id="sunhotel10929192" where email='$email'";
 
         if ($conn->query($sql1) === TRUE) {
           echo "<script type='text/javascript'>alert('Sukses Melakukan Verifikasi');location='index.php';</script>";
