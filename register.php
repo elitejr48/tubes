@@ -32,9 +32,9 @@
            <div class="col-sm-12">
                <div class="row">
   			     <div class="col-xs-4">
-            	         <label class="firstname">First Name :</label> </div>
+            	       <label class="firstname">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
   		         <div class="col-xs-8">
-  		             <input type="text" name="fname" id="fname" placeholder="Enter your First Name" class="form-control" required>
+  		          <input type="text" name="fname" id="fname" placeholder="Enter your First Name" class="form-control" required>
                </div>
   		      </div>
   		 </div>
@@ -43,7 +43,7 @@
            <div class="col-sm-12">
   		     <div class="row">
   			     <div class="col-xs-4">
-                       <label class="lastname">Last Name :</label></div>
+                       <label class="lastname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
   				<div class ="col-xs-8">
   		             <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" class="form-control last" required>
                   </div>
@@ -53,7 +53,7 @@
       <div class="col-sm-12">
           <div class="row">
             <div class="col-xs-4">
-                  <label class="username" >Username :</label></div>
+                  <label class="username" >Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
             <div class="col-xs-8"	>
                  <input type="text" name="username"  id="username" placeholder="Enter your username" class="form-control" required>
               </div>
@@ -63,7 +63,7 @@
       <div class="col-sm-12">
           <div class="row">
             <div class="col-xs-4">
-                  <label class="no_id" >Nomor Identitas :</label></div>
+                  <label class="no_id" >Nomor Identitas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
             <div class="col-xs-8"	>
                  <input type="text" name="identitas"  id="identitas" placeholder="Enter your identity number" class="form-control" required >
               </div>
@@ -73,7 +73,7 @@
       <div class="col-sm-12">
           <div class="row">
             <div class="col-xs-4">
-                  <label class="no_telp" >Nomor Telepon :</label></div>
+                  <label class="no_telp" >Nomor Telepon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
             <div class="col-xs-8"	>
                  <input type="text" name="no_telp"  id="no_telp"placeholder="Enter your Telephone Number" class="form-control" required>
               </div>
@@ -83,7 +83,7 @@
   		 <div class="col-sm-12">
   		     <div class="row">
   			     <div class="col-xs-4">
-  		             <label class="email" >Email :</label></div>
+  		             <label class="email" >Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
   			     <div class="col-xs-8"	>
   			          <input type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" required>
   		         </div>
@@ -93,7 +93,7 @@
   		 <div class="col-sm-12">
   		     <div class="row">
   			     <div class="col-xs-4">
-  		             <label class="alamat" >Alamat :</label></div>
+  		             <label class="alamat" >Alamat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
   			     <div class="col-xs-8"	>
   			          <input type="text" name="alamat"  id="alamat"placeholder="Enter your address" class="form-control" required>
   		         </div>
@@ -103,7 +103,7 @@
             <div class="col-sm-12">
   		         <div class="row">
   				     <div class="col-xs-4">
-  		 	              <label class="pass">Password :</label></div>
+  		 	              <label class="pass">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
   				  <div class="col-xs-8">
   			             <input type="password" name="password" id="password" placeholder="Enter your Password" class="form-control" required>
   				 </div>
@@ -122,7 +122,7 @@
                 <div class="col-sm-12">
                 <div class ="row">
                         <div class="col-xs-4 ">
-                    <label class="gender">Gender:</label>
+                    <label class="gender">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
                 </div>
 
                   <div class="col-xs-4 male">
@@ -137,10 +137,10 @@
                 <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
               </div>
               <!-- <input type="button" class="bButton" name="back" value="Kembali" onclick="location.href = 'index.php';"> -->
-              
+
   		     <div>
-                  
-                  
+
+
          </div>
   		 </div>
      </form>
