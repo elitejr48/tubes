@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../design.css">
+    <link rel="stylesheet" type="text/css" href="reservation.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
@@ -19,11 +19,11 @@
   </head>
 
   <?php
-    session_start();
-    if (!isset($_SESSION['username']))
-    {
-      echo "<script type='text/javascript'>alert('Anda Belum Login');location='index.php';</script>";
-    }
+     session_start();
+     if (!isset($_SESSION['username']))
+     {
+       echo "<script type='text/javascript'>alert('Anda Belum Login');location='index.php';</script>";
+     }
     ?>
   <body>
 
@@ -61,66 +61,66 @@
       </nav>
       </div>
 
-    <div class="container">
-   <!---heading---->
-       <header class="heading"> HISTORY</header><hr></hr>
-  	<!---Form starting---->
+      <div class="container">
+     <!---heading---->
+         <header class="heading"> HISTORY</header><hr></hr>
+    	<!---Form starting---->
 
-    <table style="color: black;" class="table table-bordered">
-       <tr>
-         <th class="info">No</th>
-          <th class="info">Tanggal Pemesanan</th>
-          <th class="info">Nama Kamar</th>
-          <th class="info">Tanggal Menginap</th>
-          <th class="info">Hari Menginap</th>
-          <th class="info">Total Harga</th>
-          <th class="info">Status</th>
-       </tr>
+        <form method="get">
+         <?php
+          include('../koneksi.php');
 
-       <?php
-        include('../koneksi.php');
-        function buatrp($angka)
-        {
-          $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
-	        return $hasil_rupiah;
-        }
-        $sql = "SELECT * FROM pemesanan inner join kamar on pemesanan.id_kamar = kamar.id_kamar  where pemesanan.id_pemesan = '$_SESSION[id]' order by tgl_transaksi ASC";
-
-        if($result=mysqli_query($conn,$sql))
-        {
-          if(mysqli_num_rows(mysqli_query($conn,$sql)) != 0)
+          function buatrp($angka)
           {
-          $no = 1;
-            while($data = mysqli_fetch_assoc($result)){
-                echo '<tr>';
-                    echo '<td>'.$no.'</td>';
-                    echo '<td>'.$data['tgl_transaksi'].'</td>';
-                    echo '<td width="15%">'.$data['nama_kamar'].'</td>';
-                    echo '<td>'.$data['tgl_menginap'].'</td>';
-                    echo '<td>'.$data['hari_menginap'].' hari</td>';
-                    echo '<td>'.buatrp($data['total_harga']).'</td>';
-                    if($data['status'] == 0){
-                      echo '<td>On Process</td>';
-                    }
-                    else if($data['status'] == 1) {
-                      echo '<td>Accepted</td>';
-                    }
-                    else if($data['status'] == 2) {
-                      echo '<td>Declined</td>';
-                    }
-                $no++;
+            $hasil_rupiah = "Rp  " . number_format($angka,0,',','.');
+            return $hasil_rupiah;
+          }
+
+          $sql = "SELECT * FROM pemesanan inner join kamar on pemesanan.id_kamar = kamar.id_kamar  where pemesanan.id_pemesan = '$_SESSION[id]' order by tgl_transaksi ASC";
+
+          if($result=mysqli_query($conn,$sql))
+          {
+            //echo '<td>'.$no.'</td>';
+            if(mysqli_num_rows(mysqli_query($conn,$sql)) != 0)
+            {
+            $no = 1;
+              while($data = mysqli_fetch_assoc($result)){
+                  echo '
+                  <div class="box">
+                  <div class="border-top"></div>
+                  <div class="border-right"></div>
+                  <div class="border-bottom"></div>
+                  <div class="border-left"></div>
+
+                  <div class="row draw">
+                  <div class="row draw" height="176px">';
+                      echo
+                      '
+                      <div class="col-sm-3">
+                      <br>
+                        <p style="font-size:80px">'.$data['id_pemesanan'].'</p>
+                      </div>
+                        <div class="col-sm-5 colmargin">
+                          <p>Tanggal Transaksi: '.$data['tgl_transaksi'].'</p><br>
+                          <p>Nama Kamar: '.$data['nama_kamar'].'</p><br>
+                          <p>Tanggal Menginap: '.$data['tgl_menginap'].'</p><br>
+                          <p>Hari Menginap: '.$data['hari_menginap'].'</p>
+                        </div>
+                        <div class="col-sm-4 colmargin1 text-center">
+                          <p class="harga" style="font-size:30px;">'.buatrp($data['total_harga']).'</p><br>
+
+                        </div>
+                      </div>';
+                  echo '</div></div>';
+              }
+            }
+            else
+            {
+
             }
           }
-          else
-          {
-            echo '<tr><td colspan="6">Tidak ada data!</td><tr>';
-          }
-        }
-      ?>
-
-    </table>
-  	 </div>
-
+        ?>
+       </div>
 
   </div>
 

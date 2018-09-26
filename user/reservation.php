@@ -91,6 +91,7 @@
 
         if($result=mysqli_query($conn,$sql))
         {
+          //echo '<td>'.$no.'</td>';
           if(mysqli_num_rows(mysqli_query($conn,$sql)) != 0)
           {
           $no = 1;
@@ -104,7 +105,6 @@
 
                 <div class="row draw">
                 <div class="row draw" height="176px">';
-                    //echo '<td>'.$no.'</td>';
                     echo
                     '
                       <div class="col-sm-3">

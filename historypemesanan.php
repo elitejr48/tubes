@@ -79,7 +79,7 @@
           <th class="info">Tanggal Menginap</th>
           <th class="info">Hari Menginap</th>
           <th class="info">Total Harga</th>
-          
+
        </tr>
 
        <?php
