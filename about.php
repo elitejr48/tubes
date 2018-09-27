@@ -113,7 +113,7 @@
     	<h5 style="text-align: center" font><u>Purwosari, Girijati, Purwosari,</u</h5>
     	<h6 style="text-align: center" font><u>Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55872</u</h6>
     	<br>
-    	<h7  <td align="center"><img src="...."></td> </h7>
+    	<h7  <td align="center"><img style="border:0px;width:400px;height:200px;" src="lokasi.png"></td> </h7>
     </div>
  	 </div>
 
