@@ -4,22 +4,30 @@ body{
   font-family:Helvetica;
 }
 
+figcaption{
+	font-size: 20px;
+}
+
+
 div.transbox {
   margin: 30px;
   background-color: #000000;
   color:white;
   border: 1px solid black;
-  opacity: 0.5;
+  opacity: 0.9;
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin= 10px;
+	text-align: center;
 	padding-left: 30px;
 	padding-bottom: 30px;
 	padding-right: 30px;
 }
 
+
 p{
 	line-height: 1.8;
 	font-size: large;
+	text-align: center;
 }
 
 div.transbox p {
