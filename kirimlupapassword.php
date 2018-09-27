@@ -34,10 +34,10 @@ class Mailer
     $this->mail->addAddress($email);
 
     $this->mail->isHTML(true);
-    $this->mail->Subject = 'Validate Your Email Account';
-    $this->mail->Body = 'Please Click on Link Below to activate your account:<br><br>
-            <a href="http://localhost:8080/tubes/konfirmasi.php?email=' . $email . '&kode=' . $unique_id . '">
-            Click Here to Activate your account</a>';
+    $this->mail->Subject = 'Reset Your Account Password';
+    $this->mail->Body = 'Please Click on Link Below to reset your password:<br><br>
+            <a href="http://localhost:8080/tubes/resetpass.php?email=' . $email . '&kode=' . $unique_id . '">
+            Click Here to Reset your password</a>';
 
     if($this->mail->send()) {
       echo "ya";
