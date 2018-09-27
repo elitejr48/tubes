@@ -98,7 +98,7 @@
                       '
                       <div class="col-sm-3">
                       <br>
-                        <p style="font-size:80px">'.$data['id_pemesanan'].'</p>
+                        <p style="font-size:80px">'.$no++.'</p>
                       </div>
                         <div class="col-sm-5 colmargin">
                           <p>Tanggal Transaksi: '.$data['tgl_transaksi'].'</p><br>
@@ -108,10 +108,10 @@
                         </div>
                         <div class="col-sm-4 colmargin1 text-center">
                           <p class="harga" style="font-size:30px;">'.buatrp($data['total_harga']).'</p><br>
-
                         </div>
                       </div>';
                   echo '</div></div>';
+                  
               }
             }
             else

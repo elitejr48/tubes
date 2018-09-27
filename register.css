@@ -10,6 +10,14 @@ body{
 
 }
 
+.status-not-available {
+  color: #D60202;
+}
+
+.status-available {
+  color: #2FC332;
+}
+
 /*-----for border----*/
 .contentfp{
 	font-family:Roboto,sans-serif;

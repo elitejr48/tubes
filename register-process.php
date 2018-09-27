@@ -21,29 +21,34 @@
     //1 = admin 2 = user
     $sql = "INSERT into user (first_name,last_name,username,no_identitas,no_telp,email,alamat,password,gender,status,unique_id,verification)
     VALUES ('$fname', '$lname','$username','$no_identitas','$no_telp','$email','$alamat','$password','$gender','2','$unique_id','0')";
-    $sql_get_user = mysqli_query($conn,"SELECT * FROM user where username='$username' or email='$email'") or die (mysql_error());
-
-
-    if($password == $confirmpassword)
-    {
-      if(mysqli_num_rows($sql_get_user) == 0)
+    
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      echo("$email is a valid email address");
+    }
+      if($password == $confirmpassword)
       {
-        if ($conn->query($sql) === TRUE) {
-
-          $mail->sendEmail($email,$unique_id);
-          echo "<script type='text/javascript'>alert('Registrasi Sukses, silahkan cek email untuk melakukan verifikasi');location='register.php';</script>";
-        }
-        else
+        if(mysqli_num_rows($sql_get_user) == 0)
         {
-          echo "Error updating record: " . mysqli_error($conn);
+          if ($conn->query($sql) === TRUE) {
+
+            $mail->sendEmail($email,$unique_id);
+            echo "<script type='text/javascript'>alert('Registrasi Sukses, silahkan cek email untuk melakukan verifikasi');location='register.php';</script>";
+          }
+          else
+          {
+            echo "Error updating record: " . mysqli_error($conn);
+          }
+        }
+        else {
+          echo "<script type='text/javascript'>alert('Username sudah terdaftar');location='register.php';</script>";
         }
       }
       else {
-        echo "<script type='text/javascript'>alert('Username sudah terdaftar');location='register.php';</script>";
+        echo "<script type='text/javascript'>alert('Password dan Confirm Password tidak sama');location='register.php';</script>";
       }
-    }
+    } 
     else {
-      echo "<script type='text/javascript'>alert('Password dan Confirm Password tidak sama');location='register.php';</script>";
+      echo("Email tidak valid");
     }
       exit;
   }

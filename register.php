@@ -55,7 +55,7 @@
             <div class="col-xs-4">
                   <label class="username" >Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
             <div class="col-xs-8"	>
-                 <input type="text" name="username"  id="username" placeholder="Enter your username" class="form-control" required>
+                 <input type="text" name="username"  id="username" placeholder="Enter your username" class="form-control" onBlur="checkAvailability()" required><span id="user-availability-status"></span>
               </div>
           </div>
       </div>
@@ -85,7 +85,7 @@
   			     <div class="col-xs-4">
   		             <label class="email" >Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label></div>
   			     <div class="col-xs-8"	>
-  			          <input type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" required>
+  			          <input type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" onBlur="checkEmail()" required><span id="email-availability-status"></span>
   		         </div>
   		     </div>
   		 </div>
@@ -114,8 +114,9 @@
   				     <div class="col-xs-4">
   		 	              <label class="pass">Confirm Password:</label></div>
   				  <div class="col-xs-8">
-  			             <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter your Password " class="form-control" required>
-  				 </div>
+  			            <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter your Password " class="form-control" required>
+                        <span id='message'></span>
+                </div>
             </div>
   		      </div>
             <!-----------For gender-------->
@@ -134,7 +135,7 @@
                   </div>
 
                 </div>
-                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
+                <button type="submit" class="btn btn-success btn-block" name="tambah"><span class="glyphicon glyphicon-off"></span> Submit</button>
               </div>
               <!-- <input type="button" class="bButton" name="back" value="Kembali" onclick="location.href = 'index.php';"> -->
 
@@ -151,3 +152,33 @@
 
   </body>
 </html>
+<script>
+    function checkAvailability() {
+        jQuery.ajax({
+        url: "checkavaibility.php",
+        data:'username='+$("#username").val(),
+        type: "POST",
+        success:function(data){
+        $("#user-availability-status").html(data);
+        },
+        error:function (){}
+        });
+    }
+    function checkEmail() {
+        jQuery.ajax({
+        url: "checkavaibility.php",
+        data:'email='+$("#email").val(),
+        type: "POST",
+        success:function(data){
+        $("#email-availability-status").html(data);
+        },
+        error:function (){}
+        });
+    }
+    $('#password, #confirm_password').on('keyup', function () {
+    if ($('#password').val() == $('#confirm_password').val()) {
+        $('#message').html('Matching').css('color', 'green');
+    } else 
+        $('#message').html('Not Matching').css('color', 'red');
+    });
+</script>
