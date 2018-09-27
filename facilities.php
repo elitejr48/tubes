@@ -86,60 +86,78 @@
     <h2 style="text-align:center">FACILITIES</h2>
     <p>
       <h2> Hotel Facilities : </h2>
+        <div class="image-line">
+          <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_garden.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+            </figure>
+            <span>Garden Resto View</span>
+          </div>
+        </div>
+        <div class="image-line">
+          <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_meeting.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+            </figure>
+            <span>Meeting Room</span>
+          </div>
+        </div>
+        <div class="image-line">
+          <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_taxi.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+            </figure>
+            <span>Taxi Service</span>
+          </div>
+        </div>
+          <div class="image-line">
+            <div class="hover01 column">
+              <figure>
+                <img src='images/facilities_laundry.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+              </figure>
+              <span>Laundry Service</span>
+            </div>
+          </div>
+      <div class="image-line">
+        <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_drugstore.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+            </figure>
+            <span>Drugstore</span>
+          </div>
+        </div>
+      <div class="image-line">
+        <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_security.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+            </figure>
+            <span>Large & Secure</span>
+          </div>
+        </div>
     <div class="image-line">
-      <figure>
-        <img src='images/facilities_garden.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Garden View Resto</figcaption>
+      <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_pool.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
       </figure>
-      <br>
-      <figure>
-        <img src='images/facilities_meeting.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Meeting Room</figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src='images/facilities_taxi.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Taxi Service</figcaption>
-      </figure>
-      <br>
+      <span>Swimming Pool</span>
     </div>
-    <div class="image-line">
-      <br>
-      <figure>
-        <img src='images/facilities_laundry.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Laundry Service</figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src='images/facilities_drugstore.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Drugstore</figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src='images/facilities_security.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Large & Secure</figcaption>
-      </figure>
-      <br>
-    </div>
-    <div class="image-line">
-      <br>
-      <figure>
-        <img src='images/facilities_pool.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Swimming Pool</figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src='images/facilities_bath.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Hot and Cold Water</figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src='images/facilities_room.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
-        <figcaption>Telephone, AC, TV</figcaption>
-      </figure>
-      <br>
-      </div>
-    </div>
+  </div>
+      <div class="image-line">
+        <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_bath.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+            </figure>
+            <span>Hot and Cold Water</span>
+          </div>
+        </div>
+      <div class="image-line">
+        <div class="hover01 column">
+            <figure>
+              <img src='images/facilities_room.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
+            </figure>
+            <span>Telephone, AC, TV</span>
+          </div>
+        </div>
     </p>
   </div>
 </div>
