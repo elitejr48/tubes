@@ -23,9 +23,12 @@
   <body>
     <div class="container contentfp">
    <!---heading---->
-       <header class="heading"> Registration-Form</header><hr></hr>
+   <div class="modal-header" style="padding:10px 50px;">
+       <header class="heading"> Registration-Form</header>
+       <br>
+    </div>
   	<!---Form starting---->
-
+    <br>
     <form action="register-process.php" method="post">
   	<div class="row">
   	 <!--- For Name---->

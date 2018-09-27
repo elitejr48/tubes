@@ -105,21 +105,21 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="slide1.jpg" alt="slide1" class="d-block w-100">
+        <img src="slide1.jpg" alt="slide1" width="100%" class="d-block w-100">
         <div class="carousel-caption">
           <h3>A Place of Worship</h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="slide2.jpg" class="d-block w-100" alt="slide2">
+        <img src="slide2.jpg"  width="100%" class="d-block w-100" alt="slide2">
         <div class="carousel-caption">
           <h3>Your Palace Awaits!</h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="slide3.jpg" alt="slide3" class="d-block w-100">
+        <img src="slide3.jpg" alt="slide3"  width="100%" height="20%" class="d-block w-100">
         <div class="carousel-caption">
           <h3>New
           </h3>

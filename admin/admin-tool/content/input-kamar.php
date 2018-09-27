@@ -1,5 +1,5 @@
 <?php
-include 'D:\xampp\htdocs\tubes\koneksi.php';
+include '../../../koneksi.php';
     if(isset($_POST['upload'])){
     $ekstensi_diperbolehkan	= array('png','jpg');
     $namakamar = $_POST['namakamar'];
@@ -12,7 +12,8 @@ include 'D:\xampp\htdocs\tubes\koneksi.php';
   	$ukuran	= $_FILES['berkas']['size'];
   	$file_tmp = $_FILES['berkas']['tmp_name'];
 
-      if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
+    if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)
+    {
         if($ukuran < 1044070)
         {
             $uniquesavename=time().uniqid(rand()).'.jpg';
@@ -31,14 +32,14 @@ include 'D:\xampp\htdocs\tubes\koneksi.php';
         {
              echo "<script type='text/javascript'>alert('Ukuran file terlalu besar');location='../index.php?kamar';</script>";
         }
-        }
-          else
-          {
-          echo "<script type='text/javascript'>alert('Ektensi file yang di upload tidak diperbolehkan');location='../index.php?kamar';</script>";
-          }
-        }
+    }
     else
     {
-      echo "<script type='text/javascript'>alert('Gagal Mengupload File');location='../index.php?kamar';</script>";
+    echo "<script type='text/javascript'>alert('Ektensi file yang di upload tidak diperbolehkan');location='../index.php?kamar';</script>";
     }
+}
+else
+{
+    echo "<script type='text/javascript'>alert('Gagal Mengupload File');location='../index.php?kamar';</script>";
+}
 ?>

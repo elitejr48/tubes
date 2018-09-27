@@ -145,13 +145,15 @@
                     while($data = mysqli_fetch_assoc($result)){
                         echo '<tr>';
                             echo '<td>'.$no++.'</td>';
-                            echo '<td width="12%">'.$data['nama_kamar'].'</td>';
-                            echo '<td width="12%">'.$data['tipe_kamar'].'</td>';
-                            echo '<td width="15%"><center><img src="../admin-tool/image/'.$data['gambar_kamar'].'" width="100%"></center></td>';
-                            echo '<td>'.$data['deskripsi'].'</td>';
-                            echo '<td width="15%">Rp. '.$data['harga_kamar'].'</td>';
-                            echo '<td width="10%"><a href="&namakamar='.$data['nama_kamar'].'" id="myBt1">Edit</a> / <a href="hapuskamar.php">Hapus</a></td>
-                            </tr>';
+                            echo '<td style="display:none;" class="idkamarz" width="12%">'.$data['id_kamar'].'</td>';
+                            echo '<td class="namakamar" width="12%">'.$data['nama_kamar'].'</td>';
+                            echo '<td class="tipekamar" width="12%">'.$data['tipe_kamar'].'</td>';
+                            echo '<td class="gambarkamar" width="15%"><center><img src="../admin-tool/image/'.$data['gambar_kamar'].'" width="100%"></center></td>';
+                            echo '<td class="deskripsi">'.$data['deskripsi'].'</td>';
+                            echo '<td class="hargakamar" width="15%">Rp. '.$data['harga_kamar'].'</td>';
+                            echo '<td style="display:none;" class="hargakamartemp" width="15%">'.$data['harga_kamar'].'</td>';
+                            echo '<td width="13%"><button class="btn btn-warning edit">Edit</button> <button id="" class="btn btn-danger">Empty</button></td>';
+                          echo '</tr>';
                     }
                   }
                   else
@@ -174,3 +176,61 @@
              </nav>
           </div>
    </div>
+
+   <div class="modal fade" id="myModalEdit" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content(untuk Tambah)-->
+    <div class="modal-content">
+      <form action="content/edit-kamar.php" method="post" enctype="multipart/form-data">
+          <div class="modal-header" style="padding:30px 50px;">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4><center>Edit User</center></h4>
+          </div>
+          <div class="modal-body" style="padding:40px 50px;">
+          
+                  <div class="form-group">
+                    <label for="usrname">Nama Kamar</label>
+                    <input type="hidden" name="idkamarz" id="idkamarz" class="form-control" id="id"/>
+                    <input type="text" name="namakamar" class="form-control" id="namalengkap"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="usrname">Tipe Kamar</label>
+                    <input type="text" class="form-control" name="tipekamar" id="username" placeholder="cth. Superior"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="usrname">Gambar Kamar (Kosongkan Jika tidak mau mengganti)</label>
+                    <input type="file" class="form-control" name="berkas" id="gambarkamar" placeholder="cth. Superior"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="usrname">Deksripsi</label>
+                    <input type="text" class="form-control" name="deskripsi" id="deskripsi" placeholder="cth. Superior"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="usrname">Harga</label>
+                    <input type="text" class="form-control" name="hargakamar" id="hargakamar" placeholder="cth. Superior"/>
+                  </div>
+                  <br>
+                  <input type="submit" name="upload" value="Edit" />
+          </div>
+          <div class="modal-footer">
+              <!-- <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button> -->
+          </div>
+        </form>
+      </div>
+
+    </div>
+    </div>
+<script>
+    $(function(){
+        $('.edit').click(function(e) {
+            
+            e.preventDefault();
+            $("#myModalEdit").modal();
+            $('#idkamarz').val($(this).closest('tr').find('.idkamarz').text());
+            $('#namalengkap').val($(this).closest('tr').find('.namakamar').text());
+            $('#username').val($(this).closest('tr').find('.tipekamar').text());
+            $('#deskripsi').val($(this).closest('tr').find('.deskripsi').text());
+            $('#hargakamar').val($(this).closest('tr').find('.hargakamartemp').text());
+        });
+    });
+</script>
