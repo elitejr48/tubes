@@ -139,34 +139,34 @@
   	 </div>
      <div class="footer">
          <div class="contain">
+           <div class="col">
+             <ul>
+               <br>
+               <!-- empty -->
+             </ul>
+           </div>
          <div class="col">
            <ul>
              <br>
-             <li><a href="about.php">About</a></li>
+             <li><a href="../about.php">About</a></li>
            </ul>
          </div>
          <div class="col">
            <ul>
              <br>
-             <li><a href="kebijakan.php">Kebijakan</a></li>
+             <li><a href="../kebijakan.php">Kebijakan</a></li>
            </ul>
          </div>
          <div class="col">
            <ul>
              <br>
-             <li><a href="room.php">Room</a></li>
+             <li><a href="../facilities.php">Facilities</a></li>
            </ul>
          </div>
          <div class="col">
            <ul>
              <br>
-             <li><a href="facilities.php">Facilities</a></li>
-           </ul>
-         </div>
-         <div class="col">
-           <ul>
-             <br>
-             <li><a href="contact_us.php">Contact us</a></li>
+             <li><a href="../contact_us.php">Contact us</a></li>
            </ul>
          </div>
          <div class="col social">

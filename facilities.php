@@ -105,49 +105,49 @@
   </div>
 </div>
 
-    <div class="footer">
-        <div class="contain">
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="about.php">About</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="kebijakan.php">Kebijakan</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="room.php">Room</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="facilities.php">Facilities</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul>
-            <br>
-            <li><a href="contact_us.php">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="col social">
-          <h1>Social</h1>
-          <ul>
-            <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-            <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-            <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
-          </ul>
-        </div>
-      <div class="clearfix"></div>
+<div class="footer">
+    <div class="contain">
+      <div class="col">
+        <ul>
+          <br>
+          <!-- empty -->
+        </ul>
       </div>
+    <div class="col">
+      <ul>
+        <br>
+        <li><a href="about.php">About</a></li>
+      </ul>
     </div>
+    <div class="col">
+      <ul>
+        <br>
+        <li><a href="kebijakan.php">Kebijakan</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <br>
+        <li><a href="facilities.php">Facilities</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <br>
+        <li><a href="contact_us.php">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1>Social</h1>
+      <ul>
+        <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+      </ul>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+</div>
 
   </body>
 

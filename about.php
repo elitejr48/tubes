@@ -119,6 +119,12 @@
 
    <div class="footer">
        <div class="contain">
+         <div class="col">
+           <ul>
+             <br>
+             <!-- empty -->
+           </ul>
+         </div>
        <div class="col">
          <ul>
            <br>
@@ -129,12 +135,6 @@
          <ul>
            <br>
            <li><a href="kebijakan.php">Kebijakan</a></li>
-         </ul>
-       </div>
-       <div class="col">
-         <ul>
-           <br>
-           <li><a href="room.php">Room</a></li>
          </ul>
        </div>
        <div class="col">

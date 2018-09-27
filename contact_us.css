@@ -1,277 +1,27 @@
-/*-----Background-----*/
-
 body{
-	 background-image: url(reservation_bg.jpg);
-	 background-repeat:no-repeat;
-	 background-size:cover;
-	 width:100%;
-	 height:100vh;
-	 overflow:auto;
-	     margin: 0;
-	     padding: 0;
-			 font-size: 20px;
-
+  margin:0;
+  background-color: #ecebe9;
 }
-td{
-	padding: 20px;
-}
-
-.header ul
-{
-    list-style-type: none;
-    overflow: hidden;
-    background-color:#191970;
-    margin: 0;
-}
-
-li
-{
-    float: right;
-}
-
-li a
-{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-}
-
-
-li a:hover
-{
-    background-color:red;
-}
-
-.TEXT
-{
-    width: 7cm;
-    height: 4cm;
-}
-
-.button
-{
-    display: block;
-    background-color: green;
-    width: fit-content;
-    height: fit-content;
-    color: ghostwhite;
-    padding: 15px 32px;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.button:hover
-{
-    background-color: deepskyblue;
-}
-
-
-/*--- for label of first and last name---*/
-.check_out{
-	 margin-left: 1px;
-     font-family: sans-serif;
-     font-size: 14px;
-     color: white;
-     margin-top: 10px;
-
-}
-.check_in{
-	 margin-left: 1px;
-     font-family: sans-serif;
-     font-size: 14px;
-     color: white;
-     margin-top: 5px;
-}
-.j_kamar{
-	 	margin-left: 1px;
-     font-family: sans-serif;
-     font-size: 14px;
-     color: white;
-     margin-top: 10px;
-}
-.no_id{
-	 margin-left: 1px;
-     font-family: sans-serif;
-     font-size: 14px;
-     color: white;
-     margin-top: 10px;
-}
-.dewasa{
-	 margin-left: 1px;
-     font-family: sans-serif;
-     font-size: 14px;
-     color: white;
-     margin-top: 10px;
-}
-.anak{
-	 margin-left: 1px;
-     font-family: sans-serif;
-     font-size: 14px;
-     color: white;
-     margin-top: 10px;
-     margin-bottom:auto;
-}
-.alamat{
-	 margin-left: 1px;
-     font-family: sans-serif;
-     font-size: 14px;
-     color: white;
-     margin-top: 10px;
-}
-#check_out{
-	 margin-top:5px;
-}
-#alamat{
-	 margin-top:5px;
-}
-#j_kamar{
-	 margin-top:5px;
-}
-
-#no_identitas{
-	 margin-top:5px;
-}
-#dewasa{
-	 margin-top:5px;
-}
-
-/*---for heading-----*/
-.heading{
-	 text-decoration:bold;
-	 text-align : center;
-	 font-size:30px;
-	 color:#F96;
-	 padding-top:10px;
-}
-/*-------for anak----------*/
-  /*------label----*/
-#anak{
-	  margin-top: 5px;
-}
-/*-----------for kamar--------*/
-     /*-------label-----*/
-.mail{
-	 margin-left: 44px;
-     font-family: sans-serif;
-     color: white;
-     font-size: 14px;
-     margin-top: 13px;
-}
-.kamar{
-	 color: white;
-     margin-top: 9px;
-     font-size: 14px;
-     font-family: sans-serif;
-     margin-left: 4px;
-     margin-top: 9px;
-}
-#kamar{
- margin-top: 6px;
-}
-#confirm_kamar{
- margin-top: 6px;
-}
-/*------------for phone Number--------*/
-      /*----------label--------*/
-.pno{
-	 font-size: 18px;
-     margin-left: -13px;
-     margin-top: 10px;
-     color: #ff9;
-
-}
-
-/*--------------for Gender---------------*/
-     /*--------------label---------*/
-
-.gender {
-	 color: white;
-     font-family: sans-serif;
-     font-size: 14px;
-     margin-left: 28px;
-     margin-top: 8px;
-}
-
-     /*---------- for Input type--------*/
-.col-xs-4.male{
-	 color: white;
-     font-size: 13px;
-     margin-top: 9px;
-     padding-bottom: 16px;
-}
-.col-xs-4.female {
-     color: white;
-     font-size: 13px;
-     margin-top: 9px;
-     padding-bottom: 16px;
-	 padding-right: 95px;
-}
-/*------------For submit button---------*/
-.sbutton{
-	background-color:Green;
-	margin-left:4;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-   }
-
-input[type=submit]{
-	     background-color:Green;
-	 	margin-left:4;
-	     border: none;
-	     color: white;
-	     padding: 15px 15px;
-	     text-align: center;
-	     text-decoration: none;
-	     display: inline-block;
-	     font-size: 15px;
-}
-
-.btn.btn-warning{
-  margin-right: 15px;
-}
-.btn.btn-warning:hover {
-    box-shadow: 2px 1px 2px 3px #99ccff;
-	background:#5900a6;
-	color:#ffff;
-	transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
-
-}
-
-div.transbox {
-  margin: 30px;
-  background-color: #000000;
-  color:white;
-  border: 1px solid black;
-  opacity: 1;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-  margin= 10px;
-	padding-left: 30px;
-	padding-bottom: 90px;
-	padding-right: 30px;
-	padding-top: 40px;
-}
-
-div.transbox p {
-  margin: 5%;
-  color: #FFFFFF;
-  text-align:center;
-}
-
 
 .example3 .nav >li >a {
   padding-top: 30px;
   padding-bottom: 20px;
 }
 .example3 .navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
+  padding: 18px;
+}
+
+p{
+  font-family: futura-pt,"Arial Narrow","Gill Sans MT","Franklin Gothic Medium",Arial,sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.why{
+  font-size: 2em;
+margin-bottom: 30px;
+text-align: center;
+font-weight: 700;
 }
 
 .active {
@@ -283,6 +33,9 @@ div.transbox p {
   display: none;
 }
 
+.marginw{
+  margin-top: 20px;
+}
 
 #myBtn{
   float: left;
@@ -383,9 +136,6 @@ div.transbox p {
   }
 }
 
-.myCarousel{
-  margin-top: 100px;
-}
 #login1
 {
   float: right;
@@ -411,8 +161,7 @@ div.transbox p {
     margin: 0px auto 0 auto;
 }
 
-.col-md-4{
-  padding-top: 5%;
+.col-md-3{
   padding-bottom: 5%;
 }
 .home-image{
@@ -427,23 +176,6 @@ div.transbox p {
     text-align: center;
     margin: 0px auto 0 auto;
 }
-/* Clearfix (clear floats) */
-.rowz::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.rowz
-{
- margin:0 auto;
- background:#f7f7f7;
- left:50%;
- top:50%;
-}
-/* .image1{
-  padding-left: 35%;
-  padding-right: 20%;
-} */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -468,14 +200,16 @@ div.transbox p {
   height: auto;
   background-color: #070617;
 }
+
 .footer .col {
   width: 190px;
   height: auto;
+  justify-content: center;
   float: left;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  padding: 0px 20px 30px 50px;
+  padding: 0px 20px 20px 50px;
 }
 .footer .col h1 {
   margin: 0;
@@ -560,4 +294,37 @@ div.transbox p {
   .footer .col {
     width: 100%;
   }
+}
+
+
+input[type=submit]{
+	     background-color:Green;
+	 	   margin-left:4;
+	     border: none;
+	     color: white;
+	     padding: 15px 15px;
+	     text-align: center;
+	     text-decoration: none;
+	     display: inline-block;
+	     font-size: 15px;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #000000;
+  color:white;
+  border: 1px solid black;
+  opacity: 1;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin= 10px;
+	padding-left: 30px;
+	padding-bottom: 200px;
+	padding-right: 30px;
+	padding-top: 40px;
+}
+
+div.transbox p {
+  margin: 5%;
+  color: #FFFFFF;
+  text-align:center;
 }

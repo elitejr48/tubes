@@ -104,7 +104,7 @@
                           <p>Tanggal Transaksi: '.$data['tgl_transaksi'].'</p><br>
                           <p>Nama Kamar: '.$data['nama_kamar'].'</p><br>
                           <p>Tanggal Menginap: '.$data['tgl_menginap'].'</p><br>
-                          <p>Hari Menginap: '.$data['hari_menginap'].'</p>
+                          <p>Hari Menginap:  '.$data['hari_menginap'].'</p>
                         </div>
                         <div class="col-sm-4 colmargin1 text-center">
                           <p class="harga" style="font-size:30px;">'.buatrp($data['total_harga']).'</p><br>
