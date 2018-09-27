@@ -85,7 +85,7 @@
               </div>
               <div>
                   <form>
-                      <table class="margin" cellspacing="50">
+                      <table class="margin" cellspacing="50px" border-spacing="15px">
                           <tr>
                               <td>
                                   <p>*Full Name</p>
