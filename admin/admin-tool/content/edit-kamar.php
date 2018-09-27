@@ -11,8 +11,7 @@ include '../../../koneksi.php';
             $sql = "UPDATE kamar set nama_kamar='$namakamar', tipe_kamar='$tipekamar', deskripsi='$deskripsi', harga_kamar='$harga' where id_kamar=$idkamar";
             if($conn->query($sql) === TRUE)
             {
-                echo $sql;
-                //echo "<script type='text/javascript'>alert('Berhasil mengupload file1');location='../index.php?kamar';</script>";
+                echo "<script type='text/javascript'>location='../index.php?kamar';</script>";
             }
             else
             {
@@ -38,7 +37,7 @@ include '../../../koneksi.php';
                     $sql = "UPDATE kamar set nama_kamar='$namakamar', tipe_kamar='$tipekamar', gambar_kamar='$uniquesavename', deskripsi='$deskripsi', harga_kamar='$harga' where id_kamar=$idkamar";
                     if($conn->query($sql) === TRUE)
                     {
-                        echo "<script type='text/javascript'>alert('Berhasil mengupload file');location='../index.php?kamar';</script>";
+                        echo "<script type='text/javascript'>location='../index.php?kamar';</script>";
                     }
                     else
                     {

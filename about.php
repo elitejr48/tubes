@@ -77,7 +77,7 @@
           </div>
           <div class="modal-footer">
             <p>Not a member? <a href="register.php">Sign Up</a></p>
-            <p>Forgot <a href="#">Password?</a></p>
+            <p>Forgot <a href="forgotpassword.php">Password?</a></p>
           </div>
         </form>
         </div>

@@ -32,4 +32,26 @@
     }
       exit;
   }
+  else if(isset($_POST['edit']))
+  {
+    $id = $_POST['id'];
+    $fname = $_POST['namadepan'];
+    $lname = $_POST['namabelakang'];
+    $no_identitas = $_POST['identitas'];
+    $no_telp = $_POST['no_telp'];
+    $alamat = $_POST['alamat'];
+
+    $sql = "UPDATE user set first_name='$fname', last_name='$lname', no_identitas='$no_identitas',no_telp='$no_telp', alamat='$alamat'
+    WHERE id=$id";
+
+    if ($conn->query($sql) === TRUE) {
+      echo "<script type='text/javascript'>alert('Daftar Sukses');location='../index.php?user';</script>";
+    }
+    else
+    {
+      echo "Error updating record: " . mysqli_error($conn);
+    }
+    exit;
+  }
+
 ?>

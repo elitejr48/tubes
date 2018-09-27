@@ -4,7 +4,6 @@
    <li><a href='?user'><i class="fa fa-users fa-fw"></i>&nbsp; Users</a></li>
    <li><a href='?kamar'><i class="fa fa-bed fa-fw"></i>&nbsp; Kamar</a></li>
    <li><a href='?order'><i class="fa fa-bed fa-fw"></i>&nbsp; Order</a></li>
-   <li><a href='?laporan'><i class="fa fa-area-chart fa-fw"></i>&nbsp; Laporan</a></li>
    <!-- <li class='active has-sub'><a href='#'><i class="fa fa-star fa-fw"></i>&nbsp; Produk</a>
       <ul>
          <li><a href='#'><span>Product 1</span></a></li>

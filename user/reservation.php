@@ -87,7 +87,7 @@
 	        return $hasil_rupiah;
         }
 
-        $sql = "SELECT * FROM kamar";
+        $sql = "SELECT * FROM kamar where is_deleted = 0";
 
         if($result=mysqli_query($conn,$sql))
         {

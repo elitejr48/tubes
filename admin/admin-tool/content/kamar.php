@@ -124,6 +124,7 @@
                   <th class="info">Gambar</th>
                   <th class="info">Deskripsi</th>
                   <th class="info">Harga</th>
+                  <th class="info">Status</th>
                   <th class="info" colspan="2">Action</th>
                </tr>
 
@@ -151,8 +152,24 @@
                             echo '<td class="gambarkamar" width="15%"><center><img src="../admin-tool/image/'.$data['gambar_kamar'].'" width="100%"></center></td>';
                             echo '<td class="deskripsi">'.$data['deskripsi'].'</td>';
                             echo '<td class="hargakamar" width="15%">Rp. '.$data['harga_kamar'].'</td>';
+                            if($data['is_deleted'] == 0)
+                            {
+                              echo '<td width="10%">Tersedia</td>';
+                            }
+                            else
+                            {
+                              echo '<td width="10%">Tidak Tersedia</td>';
+                            }
                             echo '<td style="display:none;" class="hargakamartemp" width="15%">'.$data['harga_kamar'].'</td>';
-                            echo '<td width="13%"><button class="btn btn-warning edit">Edit</button> <button id="" class="btn btn-danger">Empty</button></td>';
+                            if($data['is_deleted'] == 0)
+                            {
+                              echo '<td width="13%"><button class="btn btn-warning edit">Edit</button> <a class="btn btn-danger" href="content/empty.php?id='.$data['id_kamar'].'" onclick="return confirm(\'Yakin?\')">Empty</a></td>';
+                            }
+                            else
+                            {
+                              echo '<td width="13%"><button class="btn btn-warning edit">Edit</button> <a class="btn btn-success" href="content/instock.php?id='.$data['id_kamar'].'" onclick="return confirm(\'Yakin?\')">Stock</a></td>';
+                            }
+                            
                           echo '</tr>';
                     }
                   }
