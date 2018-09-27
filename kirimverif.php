@@ -15,7 +15,6 @@ class Mailer
     }
 
     public function sendEmail($email, $unique_id){
-    $this->mail->SMTPDebug = 3;
     $this->mail->IsSMTP();
     $this->mail->Host = 'smtp.gmail.com';
     $this->mail->Port = 587;

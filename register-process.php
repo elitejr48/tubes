@@ -23,14 +23,12 @@
     VALUES ('$fname', '$lname','$username','$no_identitas','$no_telp','$email','$alamat','$password','$gender','2','$unique_id','0')";
     
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      echo("$email is a valid email address");
-    }
       if($password == $confirmpassword)
       {
         if(mysqli_num_rows($sql_get_user) == 0)
         {
           if ($conn->query($sql) === TRUE) {
-
+  
             $mail->sendEmail($email,$unique_id);
             echo "<script type='text/javascript'>alert('Registrasi Sukses, silahkan cek email untuk melakukan verifikasi');location='register.php';</script>";
           }
@@ -46,10 +44,10 @@
       else {
         echo "<script type='text/javascript'>alert('Password dan Confirm Password tidak sama');location='register.php';</script>";
       }
-    } 
-    else {
-      echo("Email tidak valid");
+    } else {
+        echo("Email tidak valid");
     }
+    
       exit;
   }
 ?>
