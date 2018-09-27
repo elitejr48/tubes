@@ -24,22 +24,34 @@
     <div class="container">
   
      <div class="modal-content contentfp">
-        <form action="forgotpassproccess.php" method="post">
+        <form action="register-process.php" method="post">
         <div class="modal-header" style="padding:30px 50px;">
             <h2><center>Forgot Password</center></h2>
         </div>
-        <div class="modal-body" style="padding:40px 50px;">
+        <br>
+        <h4 style="text-align:center">Enter your new password</h4>
+        <div class="modal-body" style="padding:20px 50px;">
             <div class="form-group">
-                <p style="text-align:center">Please enter your email address and we'll send you instruction on how to reset password</p>
+                
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-envelope"></span>
+                        <span class="glyphicon glyphicon-lock"></span>
                     </span>
-                    <input type="text" name="email" class="form-control" id="usrname" placeholder="Email Address">
+                    <input type="hidden" class="form-control" name="email" value="<?php echo $_GET['email'];?>">
+                    <input type="hidden" class="form-control" name="unique_id" value="<?php echo $_GET['kode'];?>">
+                    <input type="password" name="password" class="form-control" id="usrname" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-lock"></span>
+                    </span>
+                    <input type="password" name="confirmpassword" class="form-control" id="usrname" placeholder="Confirm Password">
                 </div>
             </div>
             <br>
-                <button type="submit" name="send" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
+                <button type="submit" name="resetpass" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
         </div>
         </form>
     </div>

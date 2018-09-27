@@ -87,7 +87,8 @@
       </div>
 <div class="background">
   <div class="transbox">
-     <h1 style="text-align: center" class="Kebijakan Hotel"><b>Kebijakan Hotel</b></h1>
+     <h1 style="text-align: center" class="Kebijakan Hotel"><b>Kebijakan Sun Hotel</b></h1>
+     <hr>
     	<p style="text-align: justify">
       	1.	Tarif yang disebutkan berdasarkan masa menginap Anda.
       	<br><br>

@@ -120,23 +120,27 @@
             </div>
   		      </div>
             <!-----------For gender-------->
-                <div class="col-sm-12">
-                <div class ="row">
-                        <div class="col-xs-4 ">
-                    <label class="gender">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+            <div class="col-sm-12">
+            <div class="row">
+                <div class="col-xs-4">
+  		 	        <label class="pass">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
                 </div>
-
-                  <div class="col-xs-4 male">
-                    <input type="radio" name="gender"  id="gender" value="M" checked="checked">Male</input>
+                <div class="col-xs-8">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn active">
+                        <input type="radio" name="gender" id="gender"value="M" checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span>  Male</span>
+                    </label>
+                    <label class="btn">
+                        <input type="radio" id="gender" value="F" name="gender"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> Female</span>
+                    </label>
                 </div>
-
-                <div class="col-xs-4 female">
-                    <input type="radio"  name="gender" id="gender" value="F" >Female</input>
-                  </div>
-
                 </div>
+            </div>
+
+            <div>
                 <button type="submit" class="btn btn-success btn-block" name="tambah"><span class="glyphicon glyphicon-off"></span> Submit</button>
-              </div>
+            </div>
+
               <!-- <input type="button" class="bButton" name="back" value="Kembali" onclick="location.href = 'index.php';"> -->
 
   		     <div>
@@ -178,7 +182,7 @@
     $('#password, #confirm_password').on('keyup', function () {
     if ($('#password').val() == $('#confirm_password').val()) {
         $('#message').html('Matching').css('color', 'green');
-    } else 
+    } else
         $('#message').html('Not Matching').css('color', 'red');
     });
 </script>
