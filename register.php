@@ -126,7 +126,7 @@
             <div class="col-sm-12">
             <div class="row">
                 <div class="col-xs-4">
-  		 	        <label class="pass">Gender:</label>
+  		 	        <label class="pass">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
                 </div>
                 <div class="col-xs-8">
                 <div class="btn-group" data-toggle="buttons">
@@ -139,11 +139,11 @@
                 </div>
                 </div>
             </div>
-            
+
             <div>
                 <button type="submit" class="btn btn-success btn-block" name="tambah"><span class="glyphicon glyphicon-off"></span> Submit</button>
             </div>
-              
+
               <!-- <input type="button" class="bButton" name="back" value="Kembali" onclick="location.href = 'index.php';"> -->
 
   		     <div>

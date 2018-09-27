@@ -86,7 +86,7 @@
     <h2 style="text-align:center">FACILITIES</h2>
     <p>
       <h2> Hotel Facilities : </h2>
-      <br>
+    <div class="image-line">
       <figure>
         <img src='images/facilities_garden.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
         <figcaption>Garden View Resto</figcaption>
@@ -102,35 +102,31 @@
         <figcaption>Taxi Service</figcaption>
       </figure>
       <br>
+    </div>
+    <div class="image-line">
       <br>
       <figure>
         <img src='images/facilities_laundry.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
         <figcaption>Laundry Service</figcaption>
       </figure>
       <br>
-      <br>
       <figure>
         <img src='images/facilities_drugstore.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
         <figcaption>Drugstore</figcaption>
       </figure>
-      <br>
       <br>
       <figure>
         <img src='images/facilities_security.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
         <figcaption>Large & Secure</figcaption>
       </figure>
       <br>
+    </div>
+    <div class="image-line">
       <br>
       <figure>
         <img src='images/facilities_pool.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
         <figcaption>Swimming Pool</figcaption>
       </figure>
-      <br>
-      <tr> * </tr>
-      <br> * </br>
-      <td> * </td>
-      <br>
-      <td> Room Facilities : </td>
       <br>
       <figure>
         <img src='images/facilities_bath.jpg' alt='garden view'	style="border:0px;width:450px;height:300px"; />
@@ -142,6 +138,8 @@
         <figcaption>Telephone, AC, TV</figcaption>
       </figure>
       <br>
+      </div>
+    </div>
     </p>
   </div>
 </div>
