@@ -83,9 +83,11 @@
 
 <div class="background">
   <div class="transbox">
-    <h2 style="text-align:center">FACILITIES</h2>
-    <p>
+    <div style="padding-right:140px">
+      <h2 style="text-align:center">FACILITIES</h2>
       <h2> Hotel Facilities : </h2>
+    </div>
+    <p>
         <div class="image-line">
           <div class="hover01 column">
             <figure>
